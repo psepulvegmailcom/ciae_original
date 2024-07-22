@@ -1,0 +1,171 @@
+Content-type: text/html; charset=UTF-8
+
+<title>Envio Correos personalizados</title>
+<pre>
+2024-07-18 13:03:01
+
+<br />
+<b>Deprecated</b>:  __autoload() is deprecated, use spl_autoload_register() instead in <b>/home/ciae/public_html/correos/clases/PHPMailer-5.2-stable/PHPMailerAutoload.php</b> on line <b>45</b><br />
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+[DEBUG] conectada base de datos
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:22]
+#1  ConexionBaseDatos->__CONSTRUCT() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:7]
+#2  envioCorreo->__CONSTRUCT() called at [/home/ciae/public_html/correos/envioCorreo.php:27]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+UPDATE `envio_email_detalle` SET `estado` = 'activo' WHERE fecha_activar = '2024-07-18' AND estado = 'inactivo' 
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:48]
+#1  ConexionBaseDatos->ejecutarQuery() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:308]
+#2  envioCorreo->activarEnvioFecha() called at [/home/ciae/public_html/correos/envioCorreo.php:29]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+[Ejecuci&oacute;n SQL] UPDATE `envio_email_detalle` SET `estado` = 'activo' WHERE fecha_activar = '2024-07-18' AND estado = 'inactivo'  | Filas 0 afectadas
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:52]
+#1  ConexionBaseDatos->ejecutarQuery() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:308]
+#2  envioCorreo->activarEnvioFecha() called at [/home/ciae/public_html/correos/envioCorreo.php:29]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+UPDATE envio_email_detalle SET estado= 'inactivo' WHERE fecha_desactivar &lt;= '2024-07-18' AND estado = 'activo' 
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:48]
+#1  ConexionBaseDatos->ejecutarQuery() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:318]
+#2  envioCorreo->desactivarEnvioFecha() called at [/home/ciae/public_html/correos/envioCorreo.php:30]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+[Ejecuci&oacute;n SQL] UPDATE envio_email_detalle SET estado= 'inactivo' WHERE fecha_desactivar &lt;= '2024-07-18' AND estado = 'activo'  | Filas 0 afectadas
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:52]
+#1  ConexionBaseDatos->ejecutarQuery() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:318]
+#2  envioCorreo->desactivarEnvioFecha() called at [/home/ciae/public_html/correos/envioCorreo.php:30]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+<b>**********************************[CONSULATONSULTA SQL]**********************************</b>
+
+
+
+[Consulta SQL] SELECT a.*, b.* 
+  	 FROM envio_email_destino as b, envio_email_detalle as a  	 WHERE a.caso_envio = b.caso_envio AND a.estado = 'activo' AND b.email LIKE '%@ciae.uchile.cl' AND b.estado ='no_enviado' 
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:81]
+#1  ConexionBaseDatos->obtenerDatos() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:244]
+#2  envioCorreo->obtenerListadoDestinatarios() called at [/home/ciae/public_html/correos/envioCorreo.php:37]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+<b>**********************************[CONSULATONSULTA SQL]**********************************</b>
+
+
+
+[Consulta SQL] SELECT a.*, b.* 
+  	 FROM envio_email_destino as b, envio_email_detalle as a , base_datos_email as o 	 WHERE a.caso_envio = b.caso_envio AND a.estado = 'activo' AND o.email = b.email AND o.estado = 'activo' AND b.estado ='no_enviado' 
+	ORDER BY orden_envio ASC, RAND() LIMIT 29
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:81]
+#1  ConexionBaseDatos->obtenerDatos() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:281]
+#2  envioCorreo->obtenerListadoDestinatarios() called at [/home/ciae/public_html/correos/envioCorreo.php:37]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+<b>**********************************[CONSULATONSULTA SQL]**********************************</b>
+
+
+
+[Consulta SQL] SELECT * FROM envio_email_remitentes WHERE estado = 'activo' ORDER BY total ASC LIMIT 0, 29
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:81]
+#1  ConexionBaseDatos->obtenerDatos() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:221]
+#2  envioCorreo->obtenerRemitentes() called at [/home/ciae/public_html/correos/envioCorreo.php:40]
+
+</div>
+</pre>
+Array
+(
+    [0] => informaciones2@ciae.uchile.cl
+    [1] => informaciones32@ciae.uchile.cl
+    [2] => informaciones3@ciae.uchile.cl
+    [3] => informaciones14@ciae.uchile.cl
+    [4] => informaciones31@ciae.uchile.cl
+    [5] => informaciones35@ciae.uchile.cl
+    [6] => informaciones12@ciae.uchile.cl
+    [7] => informaciones40@ciae.uchile.cl
+    [8] => informaciones11@ciae.uchile.cl
+    [9] => informaciones9@ciae.uchile.cl
+    [10] => informaciones20@ciae.uchile.cl
+    [11] => informaciones21@ciae.uchile.cl
+    [12] => informaciones8@ciae.uchile.cl
+    [13] => informaciones17@ciae.uchile.cl
+    [14] => informaciones26@ciae.uchile.cl
+    [15] => informaciones7@ciae.uchile.cl
+    [16] => informaciones36@ciae.uchile.cl
+    [17] => informaciones34@ciae.uchile.cl
+    [18] => informaciones5@ciae.uchile.cl
+    [19] => informaciones30@ciae.uchile.cl
+    [20] => informaciones38@ciae.uchile.cl
+    [21] => informaciones28@ciae.uchile.cl
+    [22] => informaciones27@ciae.uchile.cl
+    [23] => informaciones4@ciae.uchile.cl
+    [24] => informaciones6@ciae.uchile.cl
+    [25] => informaciones23@ciae.uchile.cl
+    [26] => informaciones39@ciae.uchile.cl
+    [27] => informaciones18@ciae.uchile.cl
+    [28] => informaciones16@ciae.uchile.cl
+)
+</pre> 
+
+
+  <META HTTP-EQUIV="REFRESH" CONTENT="300;URL=envioCorreo.php?u=e889760b9a85dc871b2052565fd1147c"></META>  

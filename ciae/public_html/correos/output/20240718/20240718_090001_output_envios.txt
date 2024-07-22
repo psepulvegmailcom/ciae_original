@@ -1,0 +1,97 @@
+Content-type: text/html; charset=UTF-8
+
+<title>Envio Correos personalizados</title>
+<pre>
+2024-07-18 09:00:01
+
+<br />
+<b>Deprecated</b>:  __autoload() is deprecated, use spl_autoload_register() instead in <b>/home/ciae/public_html/correos/clases/PHPMailer-5.2-stable/PHPMailerAutoload.php</b> on line <b>45</b><br />
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+[DEBUG] conectada base de datos
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:22]
+#1  ConexionBaseDatos->__CONSTRUCT() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:7]
+#2  envioCorreo->__CONSTRUCT() called at [/home/ciae/public_html/correos/envioCorreo.php:27]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+UPDATE `envio_email_detalle` SET `estado` = 'activo' WHERE fecha_activar = '2024-07-18' AND estado = 'inactivo' 
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:48]
+#1  ConexionBaseDatos->ejecutarQuery() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:308]
+#2  envioCorreo->activarEnvioFecha() called at [/home/ciae/public_html/correos/envioCorreo.php:29]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+[Ejecuci&oacute;n SQL] UPDATE `envio_email_detalle` SET `estado` = 'activo' WHERE fecha_activar = '2024-07-18' AND estado = 'inactivo'  | Filas 0 afectadas
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:52]
+#1  ConexionBaseDatos->ejecutarQuery() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:308]
+#2  envioCorreo->activarEnvioFecha() called at [/home/ciae/public_html/correos/envioCorreo.php:29]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+UPDATE envio_email_detalle SET estado= 'inactivo' WHERE fecha_desactivar &lt;= '2024-07-18' AND estado = 'activo' 
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:48]
+#1  ConexionBaseDatos->ejecutarQuery() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:318]
+#2  envioCorreo->desactivarEnvioFecha() called at [/home/ciae/public_html/correos/envioCorreo.php:30]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+[Ejecuci&oacute;n SQL] UPDATE envio_email_detalle SET estado= 'inactivo' WHERE fecha_desactivar &lt;= '2024-07-18' AND estado = 'activo'  | Filas 0 afectadas
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:52]
+#1  ConexionBaseDatos->ejecutarQuery() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:318]
+#2  envioCorreo->desactivarEnvioFecha() called at [/home/ciae/public_html/correos/envioCorreo.php:30]
+
+</div>
+</pre>
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+<b>**********************************[CONSULATONSULTA SQL]**********************************</b>
+
+
+
+[Consulta SQL] SELECT a.*, b.* 
+  	 FROM envio_email_destino as b, envio_email_detalle as a  	 WHERE a.caso_envio = b.caso_envio AND a.estado = 'activo' AND b.email LIKE '%@ciae.uchile.cl' AND b.estado ='no_enviado' 
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:81]
+#1  ConexionBaseDatos->obtenerDatos() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:244]
+#2  envioCorreo->obtenerListadoDestinatarios() called at [/home/ciae/public_html/correos/envioCorreo.php:37]
+
+</div>
+</pre>

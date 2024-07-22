@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/Santiago
+LAST-MODIFIED:20201011T015911Z
+TZURL:http://tzurl.org/zoneinfo-outlook/America/Santiago
+X-LIC-LOCATION:America/Santiago
+BEGIN:STANDARD
+TZNAME:-04
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0400
+DTSTART:19700405T000000
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+TZNAME:-03
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0300
+DTSTART:19700906T000000
+RRULE:FREQ=YEARLY;BYMONTH=9;BYDAY=1SU
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20230605T195543Z
+UID:1685994539777-76899@ical.marudot.com
+DTSTART;TZID=America/Santiago:20230606T090000
+DTEND;TZID=America/Santiago:20230606T180000
+SUMMARY:PRESENCIAL 5ta Conferencia Internacional de Educación en Cambio Climático: Construyendo un futuro sostenible desde la escuela
+URL:https://www.ciae.uchile.cl/index.php?page=view_noticias&id=2715&externo=calendario&langSite=es
+DESCRIPTION:Participación: Presencial\n\nSalón de Honor de la Universidad de Chile\, Casa Central\nAv. Libertador Bernardo O'Higgins 1058\, Santiago de Chile\n\nPuede revisar información y programa del evento en https://www.ciae.uchile.cl/index.php?page=view_noticias&id=2715&externo=calendario&langSite=es
+LOCATION:Av. Libertador Bernardo O'Higgins 1058, Santiago de Chile
+END:VEVENT
+END:VCALENDAR

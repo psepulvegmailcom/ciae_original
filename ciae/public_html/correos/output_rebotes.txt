@@ -1,0 +1,30 @@
+Content-type: text/html; charset=UTF-8
+
+<p><a href="https://www.ciae.cl/correos/salida.txt" target="_blank">https://www.ciae.cl/correos/salida.txt</a></p>
+<pre>
+2023-05-18 14:27:39
+
+<br />
+<b>Deprecated</b>:  __autoload() is deprecated, use spl_autoload_register() instead in <b>/home/ciae/public_html/correos/clases/PHPMailer-5.2-stable/PHPMailerAutoload.php</b> on line <b>45</b><br />
+
+<pre>
+<div style="background-color: #ECECEC; padding: 15px 30px 15px 30px;margin:5px 30px 5px 30px; ">
+
+
+
+[DEBUG] conectada base de datos
+
+#0  FuncionesGenerales->outputDebug() called at [/home/ciae/public_html/correos/clases/conexionBaseDatos.php:22]
+#1  ConexionBaseDatos->__CONSTRUCT() called at [/home/ciae/public_html/correos/clases/envioCorreo.php:7]
+#2  envioCorreo->__CONSTRUCT() called at [/home/ciae/public_html/correos/obtener.php:27]
+
+</div>
+</pre>
+correos de webmaster@ciae.uchile.cl
+
+</pre>
+
+
+
+<!-- <META HTTP-EQUIV="REFRESH" CONTENT="50;URL=obtener.php?u=e889760b9a85dc871b2052565fd1147c&caso=R">   -->
+  
