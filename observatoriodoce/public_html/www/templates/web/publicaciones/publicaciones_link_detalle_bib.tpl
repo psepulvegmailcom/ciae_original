@@ -1,0 +1,1 @@
+<a href="index.php?page=view_publicacion&tipo=bib&id_publicaciones={id_publicaciones}"    id="link_blank"><img src="www/images/iconos/32x32/Target_blank.png"  title="{langSite_publicaciones_ver_detalle}" class="open_target_blank"></a>

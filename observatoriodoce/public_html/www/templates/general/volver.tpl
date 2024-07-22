@@ -1,0 +1,1 @@
+<div style="float:right">	<a href="?langSite=es&amp;page={opcion}">&lt;&lt; {texto_volver} </a></div><br /><br />

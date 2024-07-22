@@ -1,0 +1,1 @@
+<small>Para su inscripci&oacute;n debe utilizar su email personal, no de la instituci&oacute;n. La inscripci&oacute;n se identifica por  email, por esta raz&oacute;n no utilice un mismo email para distintas inscripciones, pues solo quedar&aacute; v&aacute;lido el &uacute;ltimo registro ingresado.</small>

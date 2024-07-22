@@ -1,0 +1,1 @@
+<div style="text-align:center; padding:15px; padding-top:20px "><button type="button" onClick="javascript:editElement();" style="width:50% "><span>Guardar evaluaci&oacute;n del criterio</span></button>  </div>

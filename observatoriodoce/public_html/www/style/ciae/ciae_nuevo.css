@@ -1,0 +1,430 @@
+.header-ciae{
+
+}
+.header-minisite{
+	padding: 40px 20px 30px;
+}
+.header-minisite a{
+	color: #03BAC3;
+}
+.bg-base{
+	background-color: #122B65;
+	color: #fff;
+}
+.bg-complementario{
+	background-color: #03BAC3;
+	color: #9FA0A6;
+}
+.color-base{
+	color: #122B65;
+}
+.color-complementario{
+	color: #C3B503;
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+	background-color: rgba(255,255,255,0.2);
+}
+.navbar{
+	min-height: 40px;
+}
+.navbar-ciae{
+	color: #fff;
+	border-radius: 0px;
+}
+.navbar-nav>li.active>a{
+	color: #03BAC3;
+}
+.navbar-nav>li>a{
+	color: #fff;
+	font-size: 12px;
+	padding: 10px 10px;
+}
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus{
+	background-color: transparent;
+	color: #03BAC3;
+}
+.navbar-nav>li>a.social{
+	font-size: 18px;
+	padding: 10px 8px;
+}
+.idioma{
+	margin-bottom: 10px;
+	font-size: 12px;
+}
+.form-control-search{
+	border: 1px solid #fff;
+	border-radius: 0px;
+	border-right: 0px;
+	box-shadow: none;
+}
+.input-group-addon-search{
+	background-color: transparent; 
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	border-radius: 0px;
+	color: #fff;
+}
+footer{
+	min-height: 275px;
+	width: 100%;
+	background: #2D2D2D;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+}
+footer h4{
+	font-size: 18px;
+	font-weight: 300;
+}
+.info-contacto{
+	margin-top: 60px;
+}
+.info-contacto>p{
+	font-size: 13px;
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+.logos-universidades{
+	margin-top: 30px;
+}
+.btn-primary{
+	background: #F26522;
+	color: #fff;	
+}
+.btn-primary:hover{
+	background:#F9B18E;
+}
+
+/* Home */
+.slider-home{
+	height: 420px;
+	width: calc(66.66666667% + 20px);
+	float: left;
+}
+.carousel-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: rgba(0,0,0,0.7);
+  width: 60%;
+  height: 120px;
+  text-align:left;
+  padding: 20px;
+}
+.carousel-caption h3{
+	margin-top: 0px;
+	font-weight: 300;
+}
+.carousel-caption p{
+	color: #919191;
+}
+.carousel-caption p>a{
+	color: #F26522;
+}
+.carousel-control{
+	width: 50px;
+	height: 50px;
+	background: #122B65;
+	top: inherit;
+}
+.agenda-home{
+	height: 420px;
+	width: calc(33.33333333% - 20px);
+	float: left;
+	padding: 20px;
+	color: #fff;
+}
+.agenda-home h4{
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 8px;
+	margin: 10px 0px 15px;
+	text-transform: uppercase;	
+}
+.agenda-home a{
+	color: #fff;
+	font-size: 12px;
+}
+.evento{
+	margin-bottom: 25px;
+}
+.month{
+	width: 100%;
+	max-width: 80px;
+	background: #fff;
+	border: 2px solid #fff;
+	color: #122B65;
+	text-align: center;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.day{
+	width: 100%;
+	max-width: 80px;
+	color: #fff;
+	border: 2px solid #fff;
+	text-align: center;
+	font-size: 29px;
+	padding:0px;
+}
+.info-agenda-home{
+	font-size: 14px;
+	padding-left: 0px;
+	padding-right: 15px;
+	  font-weight: 300;
+}
+.info-agenda-home p{
+	margin-bottom: 0px;
+}
+.info-agenda-home span.hora{
+	font-weight: 500;
+	font-size: 13px;
+}
+.grey-box-home{
+	background: #F1F1F2;
+	padding: 10px 20px;
+	margin-top: 20px;
+}
+h2.big-title{
+	margin-top: 0px;
+	font-weight: 300;
+	color: #122B65;
+	border-bottom: 2px solid #122B65;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+h2.title-grey-box{
+	color: #122B65;
+	display: block;
+	font-size: 16px;
+	border-bottom: 2px solid #122B65;
+	padding-bottom: 8px;
+	margin: 10px 0px;
+	text-transform: uppercase;
+}
+.post-new{
+	padding: 10px 0px 5px;
+}
+.link-square{
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 25px;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+}
+a.link-square:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.titulo-noticia-home{
+	font-size: 16px;
+	font-weight: 500;
+}
+.blue{
+	background: #122B65;
+	color: #fff;
+}
+.blue-nav{
+	border: 1px solid #122B65;
+	color: #122B65;
+}
+.orange{
+	background: #F26522;
+	color: #fff;
+}
+.orange a, .blue a{
+	color: #fff;
+}
+.caluga-sidebar{
+	padding: 10px 20px 20px;
+	margin-top: 20px;
+}
+.caluga-sidebar-nav{
+	margin-top: 20px;
+}
+.caluga-sidebar h4{
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 8px;
+	margin: 10px 0px 15px;
+	text-transform: uppercase;	
+}
+.caluga-sidebar-nav h4{
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	border-bottom: 2px solid #fff;
+	padding: 10px 20px;
+	margin: 0px 0px 15px;
+	text-transform: uppercase;	
+	background: #122B65;
+}
+.caluga-sidebar h6{
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	margin: 30px 0px 10px;
+	text-transform: uppercase;	
+	font-weight: 300;
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
+}
+.caluga-sidebar-nav h6{
+	color: #122B65;
+	display: inline-block;
+	font-size: 14px;
+	margin: 30px 0px 10px 20px;
+	text-transform: uppercase;	
+	font-weight: 300;
+	border-bottom: 1px solid;
+	padding-bottom: 3px;
+}
+.caluga-sidebar-nav>p.buscar-apellidos{
+	margin-left: 20px;
+}
+.caluga-sidebar ul{
+	padding-left: 20px;
+}
+.caluga-sidebar ul ul{
+	margin-bottom: 20px;
+}
+.titulo-proyecto{
+	color:#fff;
+	font-size: 16px;
+	margin: 5px 0px 20px;
+	display: block;
+}
+.banner-home{
+	margin-bottom: 50px;
+	margin-top: 30px;
+}
+
+/* PAGES */
+.breadcrumb {
+  padding: 0px 0px;
+  margin-bottom: 0px;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 4px;
+}
+.breadcrumb>li+li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "\003E";
+}
+.single-new{
+	margin-top: 20px;
+}
+.single-new>div.grey-box-home{
+	margin-top: 0px;
+}
+.tag-zone{
+	margin: 10px 0px 20px;
+}
+.tag{
+	padding: 5px 15px;
+	background: #122B65;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 300;
+	margin-right: 10px;
+}
+.box-style{
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.box-buscador h2{
+	margin-top: 0px;
+	font-weight: 300;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+}
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.margin-form{
+	margin-bottom: 15px;
+}
+.buscar-apellidos a{
+	padding-right: 10px;
+}
+.grey-box-list{
+	margin-bottom: 30px;
+}
+.grey-box-home h3{
+	color: #122B65;
+	font-size: 16px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid;
+}
+.grey-box-list h3{
+	margin: 20px 0px 10px;
+	border-bottom: 0px;
+}
+.grey-box-list li{
+	margin-bottom: 10px;
+}
+.link-gallery{
+	display: block;
+	margin: 10px 0px;
+}
+.banner-publicacion{
+	margin-bottom: 20px;
+}
+.banner-publicacion h5{
+	font-size: 16px;
+	margin-top: 0px;
+}
+.banner-publicacion p{
+	font-weight: 300;
+}
+h3.secondary-title{
+	font-size: 16px;
+	border-bottom: 0px;
+	margin-top: 0px;
+	text-transform: uppercase;
+}
+.item-row{
+	margin-bottom: 30px;
+}
+.view-more-long{
+	display: block;
+	border-bottom: 1px solid ;
+	margin-bottom: 30px;
+}
+.col-force-5{
+	width: 20%;
+	min-width: 140px;
+	float: left;
+}
+.col-force-5 p{
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+a.link-img-persona{
+	display: block;
+	background-color: #122B65;
+	background-image: url(images/view-more.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+a.link-img-persona:hover>img{
+	opacity: 0.2;
+}
+.ico-quienes{
+	color: #122B65;
+	font-size: 45px;
+	text-align: center;
+}
+

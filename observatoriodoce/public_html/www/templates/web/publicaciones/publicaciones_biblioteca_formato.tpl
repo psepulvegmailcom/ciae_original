@@ -1,0 +1,1 @@
+ <i>"{titulo}"</i>. {bib_author} {agno}. {bib_calsificacion}
