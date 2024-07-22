@@ -1,0 +1,6 @@
+ Estimado(a)  {usuario_nombre} <br /><br /> Le comunicamos que su formulario de postulaci&oacute;n  al &ldquo;Registro Nacional de Asistencia T&eacute;cnica Educativa (ATE)&rdquo; presenta algunas  situaciones irregulares que usted debe corregir a la brevedad para continuar su  proceso de {caso_revision}&oacute;n de antecedentes. <br /> A continuaci&oacute;n le presentamos el  detalle de la informaci&oacute;n que debe ser modificada y en que parte del formulario  se encuentra: <br /><br /><br />
+---------------------------------------------------------------------------------------------------------------<br />
+{mensaje_oferente}
+---------------------------------------------------------------------------------------------------------------
+<br />
+Usted podr&aacute; completar  satisfactoriamente su postulaci&oacute;n ingresando su nombre de usuario y clave ya  registrados en el sistema. Recuerde que el proceso de verificaci&oacute;n tiene una  duraci&oacute;n de 10 d&iacute;as desde el env&iacute;o de los nuevos antecedentes. 

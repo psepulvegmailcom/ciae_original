@@ -1,0 +1,412 @@
+@charset "utf-8";
+/* CSS Document */
+
+#todo {
+	text-align: left;
+	height: 100%;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	background-position: center 0px;
+	background-repeat: no-repeat;
+	background-image: url(../images/margen_interior.gif);
+}
+#content {
+	display:block;
+	/*overflow:auto;*/
+	position:absolute;
+	z-index:3;
+	top:55px;
+	bottom:72px;
+	margin-left:-490px;
+	left:50%;
+	}
+
+* html #content {
+	top:0;
+	bottom:0;
+	height:100%;
+	width:967px;
+	border-top-width: 56px;
+	border-bottom-width: 72px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	}
+#contenedor {
+	width: 937px;
+	margin-left: 13px;
+	top: 0px;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	background-image: url(../images/interior/circulos_fondo.gif);
+	background-repeat: no-repeat;
+	background-position: 550px 250px;
+}
+#contenido {
+	float: left;
+	padding-top: 5px;
+	width: 725px;
+	z-index: 8;
+	font-family: "Trebuchet MS";
+	font-size: 11px;
+}
+#contenido a {
+	color: #000000;
+	text-decoration: underline;
+}
+#contenido a:hover {
+	color: #FC761D;
+	text-decoration: underline;
+}
+#contenido h1 {
+	font-size: 175%;
+	color: #335991;
+	margin: 0px;
+	padding-top: 12px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 17px;
+}
+#contenido  h2 {
+	font-size: 175%;
+	color: #95CB32;
+	margin: 0px;
+	padding-top: 12px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 17px;
+	text-transform: uppercase;
+	line-height: 2px;
+	text-indent: 50px;
+}
+#contenido   h3 {
+	font-size: 110%;
+	font-weight: bold;
+	color: #6d8a96;
+	padding-bottom: 5px;
+	padding-left: 17px;
+	padding-top: 8px;
+	padding-right: 15px;
+	margin: 0px;
+}
+#contenido p {
+	margin: 0px;
+	padding-left: 17px;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+}
+#contenido .fotoIzq {
+	background-color: #FFFFFF;
+	padding: 5px;
+	border-top-width: 1px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: groove;
+	border-bottom-style: groove;
+	border-left-style: solid;
+	border-top-color: #E3E5E4;
+	border-right-color: #C4C8C6;
+	border-bottom-color: #C4C8C6;
+	border-left-color: #E3E5E4;
+	margin-right:10px;
+	margin-bottom: 10px;
+	float:left;
+	text-align:left;
+	margin-left: 15px;
+}
+#contenido .fotoDer {
+	background-color: #FFFFFF;
+	padding: 5px;
+	border-top-width: 1px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: groove;
+	border-bottom-style: groove;
+	border-left-style: solid;
+	border-top-color: #E3E5E4;
+	border-right-color: #C4C8C6;
+	border-bottom-color: #C4C8C6;
+	border-left-color: #E3E5E4;
+	margin-left:10px;
+	margin-bottom: 10px;
+	float:right;
+	text-align:right;
+}
+#contenido .fotoDer1 {
+	padding: 5px;
+	margin-left:10px;
+	margin-bottom: 10px;
+	float:right;
+	text-align:right;
+}
+#contenido .fotoIzq1 {
+	padding: 5px;
+	margin-right:10px;
+	margin-bottom: 10px;
+	float:left;
+	text-align:left;
+	margin-left: 15px;
+}
+/* ruta */
+#contenido #ubica {
+	font-size: 10px;
+	color: #FC761D;
+	padding: 0px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 13px;
+}
+#contenido #ubica a {
+	color: #6D8A96;
+	text-decoration: none;
+}
+#contenido #ubica a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+#contenido #ubica ul {
+	padding: 0px;
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0px;
+}
+#contenido #ubica li {
+	float: left;
+	background-repeat: no-repeat;
+}
+#contenido #ubica .primero {
+	background-image: url(../images/flecha_ubica1.gif);
+	background-repeat: no-repeat;
+	padding-left: 13px;
+	background-position: 5px 4px;
+}
+#contenido #ubica .normal {
+	background-image: url(../images/flecha_ubica1.gif);
+	background-repeat: no-repeat;
+	padding-left: 13px;
+	background-position: 5px 4px;
+}
+#contenido #ubica .ultimo {
+	background-image: url(../images/flecha_ubica2.gif);
+	background-repeat: no-repeat;
+	padding-left: 13px;
+	background-position: 5px 4px;
+	font-weight: bold;
+}
+#contenido #ubica .ultimo a {
+	color: #00894E;
+	text-decoration: none;
+}
+#contenido #ubica .ultimo a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+.titulos {
+	font-weight: bold;
+	color: #95CB32;
+}
+.negrillas {
+
+	font-weight: bold;
+}
+.destacados {
+	color: #FC761D;
+}
+
+.fondo_punteado {
+	background-image: url(../images/linea_horizontal.gif);
+	background-repeat: repeat-x;
+	height: 1px;
+}
+#acceso {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	width: 250px;
+	font-family: "Trebuchet MS";
+	font-size: 11px;
+}
+#acceso form {
+	margin-top: 10px;
+}
+#acceso table {
+	margin-top: 10px;
+}
+
+#acceso p {
+	text-align: right;
+	font-size: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#acceso a {
+	color: #999999;
+	text-decoration: none;
+}
+#acceso a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+.bloque {
+	background-image: url(../images/general/fondo_bloque.gif);
+	background-repeat: repeat-x;
+	border: 1px solid #4994a9;
+	font-size: 10px;
+	color: #000000;
+	padding-left: 3px;
+	margin-bottom: 5px;
+}
+
+#contenido .listado {
+}
+#contenido .listado .fecha {
+	font-size: 10px;
+	color: #9c9c9c;
+}
+#contenido .listado .epigrafe {
+	font-size: 11px;
+	font-weight:normal;
+	padding-top: 3px;
+	font-style:italic;
+}
+
+#contenido .listado .titulo {
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 0px;
+}
+#contenido .listado .bajada {
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+#contenido .listado .detalle {
+	text-align: right;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	clear: both;
+}
+#contenido #paginacion {
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#contenido ul {
+	list-style-type: none;
+	list-style-image: url(../images/bullet.gif);
+	margin-right: 15px;
+}
+#contenido ul.enlaces {
+	list-style-type: none;
+	list-style-image: none;
+	padding-top: 10px;
+}
+#contenido ul.enlaces li {
+	background-image:url(../images/bullet_enlace.gif);
+	padding-bottom: 10px;
+	margin-left: 15px;
+	background-repeat: no-repeat;
+	padding-left: 16px;
+	background-position: 0px 3px;
+}
+#contenido ul.check {
+	list-style-type: none;
+	list-style-image: none;
+}
+#contenido ul.check li {
+	background-image:url(../images/check.gif);
+	padding-bottom: 10px;
+	margin-left: 15px;
+	background-repeat: no-repeat;
+	padding-left: 16px;
+	background-position: 0px 3px;
+}
+#contenido .pin {
+	background-image: url(../images/fondo_pin.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 35px;
+	padding-top: 5px;
+}#contenido h5 {
+	font-size: 115%;
+	font-weight: bold;
+	color: #333333;
+	padding-left: 17px;
+	padding-right: 15px;
+	margin: 0px;
+}
+#contenido #lineahor {
+	background-image: url(../images/linea_horizontal.gif);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	height: 1px;
+	width: 100%;
+}
+#destacados {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 17px;
+	background-position: 0px 10px;
+	width: 650px;
+}
+#destacados .primeros {
+	width: 48%;
+	float: left;
+	margin-right: 5px;
+	background-image: url(../images/interior/fondo_equipo.gif);
+	background-repeat: no-repeat;
+	background-position: right 0px;
+}
+#destacados .primeros .fecha {
+	font-size: 10px;
+	color: #9c9c9c;
+}
+#destacados .primeros .epigrafe {
+	font-size: 11px;
+	font-weight:normal;
+	padding-top: 3px;
+	font-style:italic;
+}
+#destacados .primeros .titulo {
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 0px;
+}
+#destacados .primeros .bajada {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	display:block;
+}
+#destacados .primeros .detalle {
+	text-align: right;
+	padding-right: 15px;
+	padding-bottom: 10px;
+}
+#destacados .fotonoti {
+	border: 2px solid #BCD565;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+#destacados .clear {
+	background-image: url(../images/interior/fondo_equipo.gif);
+	clear: both;
+	height: 3px;
+	background-position: -15px;
+}
+#contenido ul.enlaces .tit {
+	list-style-type: none;
+	list-style-image: none;
+	padding-top: 10px;
+	font-weight: bold;
+}

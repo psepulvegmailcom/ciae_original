@@ -1,0 +1,1 @@
+<!-- INCLUDE BLOCK : www/templates/site/cartas/inscripcion_confirmacion.tpl -->   

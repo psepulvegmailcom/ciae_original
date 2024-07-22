@@ -1,0 +1,1 @@
+<div style="padding:20px 0 20px 0;  ">Este correo el&eacute;ctr&oacute;nico <strong>{email}</strong> no existe en los registros, por favor int&eacute;ntelo nuevamente.</div>

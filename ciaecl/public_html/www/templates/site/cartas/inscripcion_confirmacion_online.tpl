@@ -1,0 +1,4 @@
+<!-- INCLUDE BLOCK : www/templates/site/cartas/header.tpl -->
+ <p>Estimad{tratamiento} {nombre} {apellidos}</p>
+<p>Por  el presente confirmamos y recordamos su <strong>participaci&oacute;n ONLINE</strong> en el <strong>{evento},</strong> el cual se realizar&aacute; el(los) d&iacute;a(s) <strong>{date_texto}, (UTC-4 Santiago)</strong>.</p><p>El evento podr&aacute; seguirlo via streaming en {link_online}</p><p>Para revisar horarios y programa ver https://www.ciae.uchile.cl/seminarios/{id_inscripcion}.html</p><p>Esperamos  su participaci&oacute;n.</p>
+<!-- INCLUDE BLOCK : www/templates/site/cartas/footer.tpl -->   

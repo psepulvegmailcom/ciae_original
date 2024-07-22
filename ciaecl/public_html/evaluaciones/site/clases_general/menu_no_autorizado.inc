@@ -1,0 +1,5 @@
+<?
+	global $ControlHtml;   
+	$ControlHtml->revisionSesion();	
+
+?>

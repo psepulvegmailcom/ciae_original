@@ -1,0 +1,3 @@
+Se certifica por medio  del presente que <b>{nombre} {apellidos}</b> particip&oacute; en el Seminario Internacional: "Relaci&oacute;n entre lenguaje oral y lectura en ni&ntilde;os con Trastorno Espec&iacute;fico del Lenguaje" dictado por Elvira Mendoza, V&iacute;ctor Acosta y Carmen Julia Coloma, realizado el d&iacute;a 26 de diciembre de 2015, de 3 horas de duraci&oacute;n. 
+
+<!-- INCLUDE BLOCK : www/templates/web/certificados/bases/base_cierre.tpl --> 

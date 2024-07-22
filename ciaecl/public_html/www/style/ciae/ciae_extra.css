@@ -1,0 +1,63 @@
+/* CSS Document */
+#bloque_menu_admin_lateral{
+	width:25%;
+} 
+p {
+	padding: 0 0 0 0;
+}
+
+.info-contacto p>a {
+	color:#ffffff;
+}
+
+.open_target_blank { border: none; width:30px;}
+  /*.open_target_blank { border: none; width:16px; padding:1px 5px 1px 8px; }
+  
+  #link_blank {border-bottom:none; padding: 1px; padding-right:3px; }*/
+  
+.post-new{
+	padding: 10px 0px 5px 5px;
+}
+
+.agenda-home { 
+    overflow-y:   auto; 
+}
+
+.nombre-investigador {
+	color: #1983B2;
+	font-size: 12px;
+	font-weight: 500;
+	width: 300px;
+}
+
+ .carousel-caption { 
+  width: 80%;
+  height: 140px; 
+}
+
+
+   .blue-nav{
+	  margin:15px 0px 10px 0px;
+  } 
+  
+  .blue-nav li{
+	  margin-left:20px;
+	  padding-left:5px;
+  } 
+  
+.box-style li, .blue li , .post-new td, .post-new li, li{
+	  font-size:13px;
+} 
+
+.imagen_vista_galeria {
+	width: 100px;
+	padding: 3px;
+	padding-left: 8px;
+	padding-right: 8px;
+	
+}
+   
+img {
+    max-width: 100%;
+    height: auto;
+}

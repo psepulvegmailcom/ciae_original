@@ -1,0 +1,3 @@
+Se certifica por medio del presente que <b>{nombre}</b> particip&oacute; en el Seminario: "Eligiendo escuela en Chile El cliente ¿tiene la raz&oacute;n?" de 4.5 horas de duraci&oacute;n, efectuado el d&iacute;a 03 de junio de 2015, organizado por el Centro de Investigaci&oacute;n Avanzada en Educaci&oacute;n de la Universidad de Chile. 
+
+<!-- INCLUDE BLOCK : www/templates/web/certificados/bases/base_cierre.tpl -->  

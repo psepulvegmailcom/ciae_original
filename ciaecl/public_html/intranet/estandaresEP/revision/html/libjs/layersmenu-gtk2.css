@@ -1,0 +1,128 @@
+.horbar	{
+	color: #2C3F98;
+	font-weight:bold;
+	background-color: #DBDBDB;
+	border: 2px outset #cecac1;
+}
+
+.horbaritem	{
+	
+	
+	float: left;
+	white-space: nowrap;
+	font-family: bitstream vera sans, luxi sans, verdana, geneva, arial, helvetica, sans-serif;
+	font-size: 13px;
+}
+
+.horbaritem a	{
+
+	font-size: 12px;
+	color: #2C3F98;
+	font-weight:bold;
+	border-right:2px solid  #2C3F98;
+	padding: 1px;
+	padding-left: 8px;
+	display: block;
+	text-decoration: none;	
+}
+
+.horbaritem a:link	{
+	color: #2C3F98;
+	text-decoration: none;
+}
+
+.horbaritem a:visited	{
+	color: #2C3F98;/*color: #000000;*/
+	text-decoration: none;
+}
+
+.horbaritem a:hover	{
+	color: #ffffff;
+	border-right:2px solid  #2C3F98;
+	background-color: #2C3F98;/*#4b6983;*/
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.horbaritem a:active	{
+	color: #ff0000;
+	text-decoration: none;
+}
+
+.verbar	{
+	color: black;
+	background-color: #dcdad5;
+	border: 2px outset #cecac1;
+}
+
+.submenu	{
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+
+.subframe	{
+	position: relative;
+	display: block;
+	background-color: #dcdad5;
+	border: 2px outset #cecac1;
+}
+
+.item	{
+	background-color: #DBDBDB;
+		color: #2C3F98;
+	font-weight:bold;
+	text-align: left;
+	white-space: nowrap;
+	font-family: bitstream vera sans, luxi sans, verdana, geneva, arial, helvetica, sans-serif;
+	font-size: 13px;
+}
+
+.item a	{
+	color: #2C3F98;
+	font-weight:bold;
+	position: relative;
+	display: block;
+	text-decoration: none;
+}
+
+.item a:link	{
+	color: #2C3F98;/*color: #000000;*/
+	text-decoration: none;
+}
+
+.item a:visited	{
+	color: #2C3F98;/*color: #000000;*/
+	text-decoration: none;
+}
+
+.item a:hover	{
+	color: #ffffff;
+	background-color: #2C3F98;/*#4b6983;*/
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.item a:active	{
+	color: #ff0000;
+	text-decoration: none;
+}
+
+.item .fwdarr	{
+	position: absolute;
+	top: 5px;
+/*	right: 4px; */
+	right: 7px;
+}
+
+.separator	{
+	background-color: #ff0000;
+	border-top: 1px solid #9e9a91;
+	border-bottom: 1px solid #ffffff;
+	margin: 2px 0px 2px 1px;	/* top right bottom left */
+	height: 0;
+	font-size: 1px;
+	line-height: 0;
+}
+

@@ -1,0 +1,3 @@
+<p>
+<a href="http://translate.google.com/translate?hl={langSiteEspecial_url_completo_idioma_origen}&sl={langSiteEspecial_url_completo_idioma_origen}&tl={langSiteEspecial_url_completo_idioma_traducir}&u={langSiteEspecial_url_completo_unicode}" target="_blank"> <small>{langSiteEspecial_traducir_google}  </small></a><img src="www/images/flags/{langSiteEspecial_url_completo_idioma_traducir}.png" title="{langSiteEspecial_traducir_google}" border="0" width="20px">
+ </p>

@@ -1,0 +1,93 @@
+@charset "utf-8";
+#mapa {
+	padding-left: 18px;
+	padding-top: 20px;
+}
+#mapa .mapaAmarillo, #mapa .mapaVerde{
+	border: 1px solid #9eb0b8;
+	width: 210px;
+	margin-right:15px;
+	float:left;
+	margin-bottom: 15px;
+	min-height: 50px;
+}
+#mapa .mapaAzul{
+	border: 1px solid #9eb0b8;
+	width: 210px;
+	margin-right:15px;
+	float:left;
+	margin-bottom: 15px;
+	min-height: 50px;
+	}
+#mapa .mapaAzul h5 {
+	margin: 2px;
+	padding-left: 23px;
+	line-height: 12px;
+	background-image: url(../images/mapa/gris.gif);
+	color: #FFFFFF;
+}
+#mapa .mapaAmarillo h5 {
+	margin: 2px;
+	padding-left: 23px;
+	line-height: 25px;
+	background-image: url(../images/mapa/amarillo.gif);
+	color: #FFFFFF;
+}
+#mapa .mapaVerde h5 {
+	margin: 2px;
+	padding-left: 23px;
+	line-height: 25px;
+	background-image: url(../images/mapa/azul.gif);
+	color: #FFFFFF;
+}
+#mapa ul {
+	margin: 0px;
+	list-style-image: none;
+	list-style-type: none;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#mapa .mapaAmarillo li {
+	padding-left: 27px;
+	background-image: url(../images/mapa/ruta-amarilla.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	padding-bottom: 7px;
+	padding-right: 5px;
+}
+#mapa .mapaAmarillo li.ultimo {
+	background-image: url(../images/mapa/final-amarilla.gif);
+	background-repeat: no-repeat;
+}
+#mapa .mapaVerde li {
+	padding-left: 27px;
+	background-image: url(../images/mapa/ruta-azul.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	padding-bottom: 7px;
+	padding-right: 5px;
+}
+#mapa .mapaVerde li.ultimo {
+	background-image: url(../images/mapa/final-azul.gif);
+	background-repeat: no-repeat;
+}
+#mapa .mapaVerde a {
+	padding-left: 27px;
+	background-image: url(../images/mapa/ruta-azul.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	padding-bottom: 7px;
+	padding-right: 5px;
+	color: #FFFFFF;
+}
+#mapa .mapaVerde a:hover {
+	padding-left: 27px;
+	background-image: url(../images/mapa/ruta-azul.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 0px;
+	padding-bottom: 7px;
+	padding-right: 5px;
+	color: #F4FDCE;
+}

@@ -1,0 +1,1 @@
+<small>La inscripci&oacute;n se identifica por  email, por esta raz&oacute;n no utilice un mismo email para distintas inscripciones, pues solo quedar&aacute; v&aacute;lido el &uacute;ltimo registro ingresado.</small>

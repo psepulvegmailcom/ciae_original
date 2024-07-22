@@ -1,0 +1,3 @@
+[18-May-2011 14:51:56] LimeSurvey ERROR while checking POST session- Probable CSRF attack Received=2u2aeeqxzx / Expected=  for action=exportresults .
+[28-May-2011 13:41:05] LimeSurvey ERROR while checking POST session- Probable CSRF attack Received= / Expected= ws8uscjn8h for action=conditions .
+[28-May-2011 13:41:53] LimeSurvey ERROR while checking POST session- Probable CSRF attack Received= / Expected= ws8uscjn8h for action=conditions .

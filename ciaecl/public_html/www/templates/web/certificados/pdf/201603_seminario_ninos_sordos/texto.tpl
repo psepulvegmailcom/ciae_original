@@ -1,0 +1,3 @@
+Se certifica por medio del presente que <b>{nombre}</b> particip&oacute; en el Seminario-Taller "Ense&ntilde;ar a leer a ni&ntilde;os sordos desde una perspectiva Intercultural-Bilingüe" de 3 horas de duraci&oacute;n, efectuado el d&iacute;a 09 de marzo de 2016, organizado por el Centro de Investigaci&oacute;n Avanzada en Educaci&oacute;n de la Universidad de Chile. 
+
+<!-- INCLUDE BLOCK : www/templates/web/certificados/bases/base_cierre.tpl -->  

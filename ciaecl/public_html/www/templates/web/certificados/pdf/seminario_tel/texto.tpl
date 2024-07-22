@@ -1,0 +1,3 @@
+Se certifica por medio del presente que <b>{nombre}</b> particip&oacute; en el Seminario "Relaci&oacute;n entre lenguaje oral y lectura en ni&ntilde;os con trastorno espec&iacute;fico del lenguaje" dictado por las investigadoras Carmen Julia Coloma, Zulema De Barbieri y Carmen Sotomayor, el d&iacute;a 16 de enero de 2015.
+
+<!-- INCLUDE BLOCK : www/templates/web/certificados/bases/base_cierre.tpl -->  

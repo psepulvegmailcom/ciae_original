@@ -1,0 +1,1 @@
+document.getElementById('{div_info_oferente}').innerHTML =  '{div_info_oferente_dato}'; 

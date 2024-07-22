@@ -1,0 +1,1261 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Diplomado "Estrategias y prácticas  para la enseñananza de la habilidad de modelamiento matemático en las bases curriculares"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("iframe").each(function (index) {
+                $(this).before("<div id='div-video-" + index + "' class='div-video'></div>")
+                var video = $(this);
+                $("#div-video-" + index).append(
+                        $(this).clone()
+                )
+                video.remove();
+            });
+
+            $(".link-video-futbol").click(function() {
+                $("#modal-video > .modal-header > h3").html( $(this).attr("video-title") );
+                $("#modal-video > .modal-body > .div-video").html("<iframe width='420' height='315' src='http://www.youtube.com/embed/" +$(this).attr("video")+ "?rel=0' frameborder='0' allowfullscreen></iframe>");
+            });
+
+            $(".modal-video-close").click(function() {
+                $("#modal-video > .modal-header > h3").html("");
+                $("#modal-video > .modal-body > .div-video").html("");
+            });
+        });
+    </script>
+    <style>
+        .div-video {
+            position:relative;
+            padding-bottom:45.0%;
+            padding-top:30px;
+            /*height:0;*/
+            overflow:hidden;
+            max-width:640px;
+            margin:0 auto;
+            border-left:21px solid #DFF0D8;
+        }
+        .div-video iframe {
+            margin:0 auto;
+        }
+        .div-video iframe,
+        .div-video object,
+        .div-video embed {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            max-width:640px;
+            max-height:360px;
+        }
+
+        .alert-success {
+            max-width:800px;
+            margin:0 auto;
+        }
+    </style>
+
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+</head>
+
+<body>
+<!-- Modal -->
+<div id="modal-video" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close modal-video-close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3></h3>
+    </div>
+    <div class="modal-body">
+        <div class="div-video"></div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn modal-video-close" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+    </div>
+</div>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner" style="background:#0E66AA;">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li><a href="#fundamentacion" style="color:white;">Fundamentación</a></li>
+                    <li><a href="#identificacion" style="color:white;">Programa</a></li>
+                    <li><a href="#plan" style="color:white;">Plan de estudios</a></li>
+                    <li><a href="#metodologia" style="color:white;">Metodología</a></li>
+                    <li><a href="#listado" style="color:white;">Módulos</a></li>
+                    <li><a href="#evaluacion" style="color:white;">Evaluación</a></li>
+                    <li><a href="#equipo" style="color:white;">Equipo</a></li>
+                    <li><a href="#faq" style="color:white;">FAQ</a></li>
+                    <!-- <li><a href="#masinformacion" style="color:white;">Pre-inscripción</a></li> -->
+                    <li><a href="inscripcion.html" target="_blank" style="color:white;">Inscripción</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="well">
+<br>
+<center>
+    <table style="width:1024px;">
+        <tr>
+            <td style="text-align:left; padding-left:54px;"><img src="img/logo_ciae.png" class="img-polaroid"
+                                                                 style="height:105px;"></td>
+            <td style="width:20px;"></td>
+            <td style="text-align:right; padding-right:48px;"><img src="img/logo_uchile.png" class="img-polaroid"
+                                                                   style="height:105px;"></td>
+        </tr>
+    </table>
+</center>
+<br>
+
+<center><img src="img/diplomado.png" alt="banner"></center>
+
+<!-- Begin page content -->
+<div class="container" style="clear:both; text-align:justify;">
+<br><br>
+
+<!--<div class="page-header">
+    <h1 style="font-size:2.2em; text-align:justify;"></h1>
+</div>-->
+<div class="alert alert-success">
+    <br>
+    <h5>
+        <ol>
+            <li>Aprender haciendo y practicando, no sólo sentado escuchando.</li>
+            <li>Enfocado en enseñar la nueva habilidad de las Bases Curriculares.</li>
+            <li>Sistemática y constante retroalimentación de pares.</li>
+            <li>Se integran activamente los estudiantes del participante.</li>
+            <li>Estrategia situada en el aula para la adquisición de competencias.</li>
+            <li>Gran variedad de ejercicios y actividades transversales.</li>
+            <li>Activo uso de la tecnología.</li>
+            <li>Presencial un sábado cada mes, resto en línea por Internet.</li>
+        </ol>
+    </h5>
+    <br>
+    <iframe width="640" height="360" src="http://www.youtube.com/embed/h2hsBr1sVG0?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<hr id="fundamentacion">
+<br>
+
+<p class="lead">FUNDAMENTACIÓN TEÓRICA</p>
+<br>
+¿Por qué enseñar modelamiento matemático? Por una parte, desde el año 2012 en las nuevas bases curriculares
+de educación básica <a href="http://seminario.conectaideas.com" target="_parent">(ver Seminario Internacional)</a> se
+incluye esta habilidad y está también propuesta para incluirla en enseñanza media.
+Por otra parte, esta es una habilidad clave para enfrentar los desafíos de la vida profesional y personal
+actual. El uso de modelos matemáticos es una componente indispensable y crítica en la aplicación de las
+matemáticas. Tal como Arquímedes ya lo hacía, muchos matemáticos, ingenieros y científicos hacen modelos
+matemáticos para resolver problemas prácticos. Por esta razón muchos países están incorporando esta
+habilidad en sus currículos. Por ejemplo, la prueba internacional PISA de la OCDE la incluye desde 2003, la
+prueba TIMMS también, el currículo de Alemania y el Common Core de Estados Unidos también ya incorporan esta
+habilidad. Sin embargo, el modelamiento matemático es una habilidad desconocida para los docentes, dado que
+es primera vez que se incluye explícitamente en el currículo. Existe un gran vacío que este programa viene a
+ayudar a llenar.
+<br><br>
+¿Qué es lo nuevo que hace ahora tan importante el modelamiento matemático? Con el creciente uso del
+computador y las simulaciones computacionales, se potencian los modelos matemáticos. Antes, con un modelo
+matemático medianamente complejo era muy difícil realizar los cálculos para entender lo que predecía el
+modelo en diversas situaciones. Ahora en cambio, con el poder computacional existente hay una enorme
+capacidad de calcular lo que los modelos predicen en diferentes escenarios y de esta manera mejorar la toma
+de decisiones. Por esta razón, la tendencia mundial es complementar las habilidades matemáticas
+tradicionales con la de construir modelos matemáticos.
+<br><br>
+El programa tiene por objetivo que el participante adquiera las estrategias y competencias para desarrollar
+esta habilidad en sus estudiantes. Cada participante debe incluir a sus alumnos inscribiéndolos en la
+plataforma de manera que también participen activamente y de esta forma desde el inicio poner en práctica en
+aula con sus alumnos lo que va aprendiendo. Es un aprendizaje situado y formativo. Las actividades del
+participante y de sus estudiantes son seguidas en línea y retroalimentadas sistemáticamente por el equipo
+docente y por pares que también participan en el diplomado. Terminado el programa el participante tendrá
+cientos de horas de práctica en enseñar modelamiento matemático y una gran cantidad de retroalimentación
+personalizada. Con esta metodología de aprender haciendo y permanente evaluación formativa, el participante
+logrará adquirir un gran dominio y efectividad en enseñar modelamiento matemático a estudiantes de la
+escuela donde se desempeña.
+<br><br>
+
+<div class="alert alert-success">
+    <h3>MOOC Blended</h3>
+    8 meses, total 560 horas<br><br>
+    <h5>
+        <ol>
+            <li>Presencial: un sábado cada mes</li>
+            <li>Video streamimg todos los miércoles de 16:00 a 18:00</li>
+            <li>Enviar 1 video semanal a ser analizado por pares</li>
+            <li>Inscribir 1 curso con sus estudiantes con 2 sesiones web semanales</li>
+        </ol>
+    </h5>
+    <br>
+    <table style="width:100%;">
+        <tr>
+            <td style="text-align:center;"><img src="img/img_a1.png" alt="img" class="img-polaroid"/></td>
+            <td style="text-align:center;"><img src="img/img_a2.png" alt="img" class="img-polaroid"/></td>
+        </tr>
+    </table>
+    <br>
+</div>
+<hr id="identificacion">
+<br>
+
+<p class="lead">IDENTIFICACIÓN DEL PROGRAMA</p>
+
+<table class="table table-striped table-bordered">
+    <tbody>
+    <tr>
+        <td>Nombre del Diplomado</td>
+        <td>“ESTRATEGIAS Y PRÁCTICAS PARA LA ENSEÑANZA DE LA HABILIDAD DE MODELAMIENTO MATEMÁTICO EN LAS
+            BASES CURRICULARES”
+        </td>
+    </tr>
+<!--     <tr>
+        <td>Naturaleza del programa</td>
+        <td>Diplomado de Postgrado</td>
+    </tr> -->
+    <tr>
+        <td>Duración del Programa</td>
+        <td>8 meses (560 Hrs.)</td>
+    </tr>
+    <tr>
+        <td>Unidad Académica responsable</td>
+        <td>Centro de Investigación Avanzada en Educación, Vicerrectoría Asuntos Académicos. Universidad de
+            Chile. Periodista José Carrasco Tapia 75, Santiago.
+        </td>
+    </tr>
+    <tr>
+        <td>Horario</td>
+        <td>Sesión presencial 1 Sábado por mes de 09:00 a 18:00 y sesión de video streaming todos los miércoles de 16:00 a 18:00.
+        </td>
+    </tr>
+    <tr>
+        <td>Período de Clases</td>
+        <td>Mayo - Diciembre</td>
+    </tr>
+    <tr>
+        <td>Nombre académico responsable</td>
+        <td>Prof. Roberto Araya Schulz</td>
+    </tr>
+    <tr>
+        <td>Costo del programa</td>
+        <td>Arancel: $ 1.500.000, Matrícula: $ 150.000 <!-- <br/>(consulte si su establecimiento puede incorporarlo como
+            perfeccionamiento y usar ley SEP) -->
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br>
+
+
+<hr id="plan">
+<br>
+
+<p class="lead">PLAN DE ESTUDIOS Y CONTENIDOS PROGRAMATICOS</p>
+<h5>Objetivos del plan de estudios</h5>
+
+Con este programa los participantes
+
+<ul>
+    <li>Adquirirán las competencias para desarrollar la habilidad de modelamiento matemático en sus estudiantes.</li>
+    <li>Dominarán estrategias de uso, selección, ajuste y construcción de modelos matemáticos.</li>
+    <li>Dominarán la estrategia de comenzar con modelos concretos, luego computacionales y luego pasar a modelos
+        abstractos.
+    </li>
+    <li>Conocerán una gran cantidad de modelos matemáticos en temas transversales, tal como biología, salud, deportes,
+        ciencias sociales, cognición, afectos, relaciones interpersonales, y vida diaria.
+    </li>
+    <li>Actualizarán conocimientos y desarrollarán habilidades que les permitan implementar los planes y programas que
+        deben enseñar de acuerdo a las nuevas Bases Curriculares del Ministerio de Educación.
+    </li>
+</ul>
+<br>
+
+<h5>Entre otras competencias que los participantes adquirirán al finalizar el programa están</h5>
+
+<ul>
+    <li>Usar, seleccionar, ajustar y crear modelos matemáticos apropiados al nivel y necesidades de sus
+        estudiantes.
+    </li>
+    <li>Tomar decisiones de selección de desafíos de modelamiento para diferentes Objetivos de Aprendizaje
+        de las Bases Curriculares.
+    </li>
+    <li>Prever estrategias más efectivas para enseñar modelamiento matemático según intereses y temas.</li>
+    <li>Utilizar tecnología en línea de asignación de ejercicios de modelamiento y de monitoreo de los
+        avances de estudiantes.
+    </li>
+    <li>Utilizar videos de clase para estudiar prácticas, e identificar la estructura y la dinámica social
+        en el aula al hacer actividades de modelamiento matemático.
+    </li>
+    <li>Usar tecnología computacional para simular modelos.</li>
+</ul>
+
+<br>
+<hr id="metodologia">
+<br>
+
+<p class="lead">METODOLOGÍA</p>
+El método de enseñanza es de tecnología MOOC (Massive Open Online Course) mezclado con actividad presencial.
+La principal actividad se desarrollará fundamentalmente en la misma aula del participante con sus propios
+estudiantes. Es una metodología situada en el aula y con evaluación formativa sistemática y permanente. Por
+una parte, cada participante grabará en video una sesión a la semana y la enviará a un servidor del curso.
+Al mismo tiempo analizará en forma anónima grabaciones de sesiones realizadas por pares utilizando rúbrica
+de evaluación. Por otra parte, cada semana el participante asignará actividades a sus estudiantes en
+plataforma web para que éstos la realicen en dos sesiones de laboratorio. Las actividades serán de
+modelamiento y ajustadas a los objetivos de aprendizaje que corresponden a esa semana según su
+planificación. Durante la sesión en los que sus estudiantes trabajen el participante recibirá
+instantáneamente retroalimentación del progreso de cada estudiante, especialmente los que vayan teniendo más
+dificultades y un aviso de los ejercicios o actividades que están significado más problema al curso. Además
+recibirá un reporte semanal de avance por Objetivos de Aprendizaje y Habilidades.<br><br>
+
+Cada miércoles por video streaming recibirán los conceptos y estrategias claves así como las instrucciones
+de los trabajos de la semana, las instrucciones de grabación de clases, el análisis de los trabajos
+realizados por los alumnos de cada participante y la planificación de las clases de la próxima semana.<br><br>
+
+Un sábado de cada mes se realizará una reunión presencial donde los participantes recibirán un compendio de
+las actividades realizadas por todos y un resumen de los conceptos involucrados. Luego, individual y
+anónimamente en sus notebooks personales, los participantes examinarán videos de clases de otros
+participantes. A continuación, los participantes trabajarán en equipo ajustando sus clases según las
+indicaciones de los pares anónimos. Finalmente, los participantes recibirán una introducción a los conceptos
+y estrategias para el mes siguiente. En el Módulo 6, parte de la actividad se realizará en un patio o
+parque, en los que construirán modelos físicos concretos.<br><br>
+
+Al inicio del programa cada participante recibirá una carpeta física del curso y una cuenta en la plataforma
+web para él y cada uno de sus estudiantes.<br><br>
+
+En síntesis hay varias características metodológicas que hacen este programa muy diferente de otros:<br>
+
+<ul>
+    <li>Enfocado en cómo enseñar la nueva habilidad de las Bases Curriculares.</li>
+    <li>Metodología de aprender haciendo y practicando, y no sentado escuchando.</li>
+    <li>Sistemática y constante retroalimentación de pares.</li>
+    <li>Participan activamente los estudiantes del participante.</li>
+    <li>Estrategia situada en el aula para la adquisición de competencias.</li>
+    <li>Gran variedad de ejercicios y actividades transversales (biología, salud, deportes, ciencias
+        sociales, cognición, afectos, relaciones interpersonales y vida diaria).
+    </li>
+    <li>
+        Uso activo de la tecnología
+        <ul>
+            <li>Video streaming semanal con participación en línea.</li>
+            <li>Profundo análisis entre pares de videos de clases soportado por plataforma web.</li>
+            <li>Intenso uso de plataforma por estudiantes propios de cada participante.</li>
+            <li>Actividades concretas (catapultas, cohetes, botes de hormigón) monitoreadas con tics.</li>
+            <li>Juegos de tablero, juegos en línea y torneos entre escuelas de profesores participantes.</li>
+        </ul>
+    </li>
+</ul>
+
+<br><br>
+
+<div class="alert alert-success">
+    <h3>Contenidos</h3>
+    <h5>
+        <table style="color:#468847;">
+            <tr><td valign="top"><b>Módulo 1</b></td><td valign="top">Las nuevas habilidades de las Bases Curriculares y cómo enseñarlas.</td></tr>
+            <tr><td valign="top"><b>Módulo 2</b></td><td valign="top">¿Cómo enseñar Modelamiento Matemático con Juegos de Tablero?</td></tr>
+            <tr><td valign="top"><b>Módulo 3</b></td><td valign="top">¿Cómo enseñar Modelamiento Matemático con Estanques?</td></tr>
+            <tr><td valign="top"><b>Módulo 4</b></td><td valign="top">¿Cómo enseñar Modelamiento Matemático para descubrir patrones estadísticos?</td></tr>
+            <tr><td valign="top"><b>Módulo 5</b></td><td valign="top">¿Cómo enseñar Modelamiento Matemático en la Selección Natural y Sexual?</td></tr>
+            <tr><td valign="top"><b>Módulo 6</b></td><td valign="top">¿Cómo enseñar Modelamiento Matemático con actividades fuera de la sala de clase?</td></tr>
+            <tr><td valign="top"><b>Módulo 7</b></td><td valign="top">Estudio de clases de Modelamiento Matemático.</td></tr>
+            <tr><td valign="top"><b>Módulo 8</b></td><td valign="top">¿Cómo evaluar el aprendizaje del Modelamiento Matemático.</td></tr>
+        </table>
+    </h5>
+    <br>
+    <table style="width:100%;">
+        <tr>
+            <td style="text-align:center;">
+                <a href="#modal-video" role="button" class="btn link-video-futbol" data-toggle="modal" video="43a-kALN1ac" video-title="Canal 13: Catapultas">Video Modelamiento de Catapultas</a>
+                <img src="img/img_b1.png" alt="img" class="img-polaroid"/>
+                <a href="#modal-video" role="button" class="btn link-video-futbol" data-toggle="modal" video="t8WvKeyztQQ" video-title="Canal 13: Seminario">Video Modelamiento en Decisiones</a>
+            </td>
+        </tr>
+    </table>
+    <br>
+</div>
+<hr id="listado">
+<br>
+
+<p class="lead">Módulos y contenidos</p>
+<table class="table table-striped table-bordered">
+    <tbody>
+    <tr>
+        <th>Módulo 1</th>
+        <th>Las nuevas habilidades de las Bases Curriculares y cómo enseñarlas.</th>
+    </tr>
+    <tr>
+        <td>Descripción del módulo</td>
+        <td>Los participantes conocerán las tendencias mundiales de inclusión de la habilidad de modelamiento
+            matemático, las justificaciones, ejemplos, y las estrategias de enseñanza.
+        </td>
+    </tr>
+    <tr>
+        <td>Contenidos</td>
+        <td>
+            <ul>
+                <li>Las Bases Curriculares.</li>
+                <li>Las 4 habilidades.</li>
+                <li>Revisión de los Objetivos de Aprendizaje.</li>
+                <li>El Modelamiento Matemático.</li>
+                <li>Modelamiento matemático en PISA.</li>
+                <li>Desafíos cognitivos: la barrera simbólica.</li>
+                <li>Desafíos motivacionales.</li>
+                <li>Marco teórico de la psicología educacional evolucionaria.</li>
+                <li>El rol del juego y de las historias.</li>
+                <li>Modelos implícitos y modelos explícitos.</li>
+                <li>Estrategia de enseñanza: usar, seleccionar, ajustar, construir.</li>
+                <li>Estrategia de lo Concreto, a lo Computacional, a lo Abstracto.</li>
+                <li>Uso de la plataforma con los estudiantes.</li>
+                <li>Análisis de prácticas en aula.</li>
+                <li>Uso de juegos para el modelamiento.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Horas</td>
+        <td>Total 70 horas (presenciales 9 horas)</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<table class="table table-striped table-bordered">
+    <tbody>
+    <tr>
+        <th>Módulo 2</th>
+        <th>¿Cómo enseñar Modelamiento Matemático con Juegos de Tablero?</th>
+    </tr>
+    <tr>
+        <td>Descripción del módulo</td>
+        <td>En este módulo los participantes aprenderán a enseñar a usar, seleccionar y ajustar diversos juegos de
+            tablero que modelan movimientos de organismos y/o partículas.
+        </td>
+    </tr>
+    <tr>
+        <td>Contenidos</td>
+        <td>
+            <ul>
+                <li>Tableros de tropismo animal.</li>
+                <li>Estrategias motivacionales con tableros.</li>
+                <li>Tableros para subir cerros.</li>
+                <li>Tableros para bajar cerros con inercia.</li>
+                <li>Tableros con inercia y gradiente.</li>
+                <li>Juegos con movimiento de animales.</li>
+                <li>Objetivos de Aprendizaje en los diferentes tableros.</li>
+                <li>Vientos y predicción del tiempo.</li>
+                <li>Movimiento de planetas.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Horas</td>
+        <td>Total 70 horas (presenciales 9 horas)</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<table class="table table-striped table-bordered">
+    <tbody>
+    <tr>
+        <th>Módulo 3</th>
+        <th>¿Cómo enseñar Modelamiento Matemático con Estanques?</th>
+    </tr>
+    <tr>
+        <td>Descripción del módulo</td>
+        <td>En este módulo los participantes aprenderán a enseñar a usar, seleccionar y ajustar modelos tipo estanques
+            (acumuladores) y modelar dinámicas en tiempo discreto de estanques de agua, sistema digestivo, estados
+            emocionales, relaciones de pareja.
+        </td>
+    </tr>
+    <tr>
+        <td>Contenidos</td>
+        <td>
+            <ul>
+                <li>Estanques con líquidos.</li>
+                <li>Puntos de equilibrio.</li>
+                <li>Estrategias con material concreto.</li>
+                <li>Ajuste de parámetros claves en un estanque.</li>
+                <li>Modelamiento de los estados de ánimo.</li>
+                <li>Estanques encadenados.</li>
+                <li>Modelamiento del deseo.</li>
+                <li>Modelamiento del sistema digestivo.</li>
+                <li>Estanques paralelos conectados.</li>
+                <li>Modelo de influencia de estados emocionales en parejas.</li>
+                <li>Objetivos de aprendizaje en modelos con estanques.</li>
+                <li>Simulaciones en planillas.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Horas</td>
+        <td>Total 70 horas (presenciales 9 horas)</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<table class="table table-striped table-bordered">
+    <tbody>
+    <tr>
+        <th>Módulo 4</th>
+        <th>¿Cómo enseñar Modelamiento Matemático para descubrir patrones estadísticos?</th>
+    </tr>
+    <tr>
+        <td>Descripción del módulo</td>
+        <td>En este módulo los participantes aprenderán cómo motivar a sus estudiantes a encontrar patrones, cómo
+            enseñar estrategias que aprovechen la capacidad innata del sistema visual de encontrar patrones, y a enseñar
+            diversas situaciones de la vida profesional y personal donde es importante ser eficiente en la búsqueda de
+            patrones.
+        </td>
+    </tr>
+    <tr>
+        <td>Contenidos</td>
+        <td>
+            <ul>
+                <li>La importancia de encontrar patrones.</li>
+                <li>Estrategias de búsqueda de patrones.</li>
+                <li>Estrategias con material concreto.</li>
+                <li>Toma de decisiones simultáneo con búsqueda de patrones.</li>
+                <li>Modelos implícitos.</li>
+                <li>Representación gráfica y búsqueda visual.</li>
+                <li>Modelos explícitos.</li>
+                <li>Modelamiento en el diagnóstico médico.</li>
+                <li>Modelamiento en búsqueda de pareja.</li>
+                <li>Modelamiento en riesgo crediticio.</li>
+                <li>Modelamiento en los deportes.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Horas</td>
+        <td>Total 70 horas (presenciales 9 horas)</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<table class="table table-striped table-bordered">
+    <tbody>
+    <tr>
+        <th>Módulo 5</th>
+        <th>¿Cómo enseñar Modelamiento Matemático en la Selección Natural y Sexual?</th>
+    </tr>
+    <tr>
+        <td>Descripción del módulo</td>
+        <td>En este módulo los participantes aprenderán a enseñar el modelamiento matemático en la selección natural y
+            sexual de los organismos. Aprenderán estrategias para enseñar cómo representar patrones en características
+            de especies a través de diferentes generaciones y a describir la evolución de rasgos.
+        </td>
+    </tr>
+    <tr>
+        <td>Contenidos</td>
+        <td>
+            <ul>
+                <li>¿Por qué enseñar modelamiento de sección natural y sexual?</li>
+                <li>Especies, organismos, rasgos y generaciones.</li>
+                <li>Estrategias con material concreto.</li>
+                <li>Descripción matemática de rasgos en poblaciones.</li>
+                <li>Modelamiento de la heredabilidad de rasgos.</li>
+                <li>Modelamiento de costos y beneficios de rasgos.</li>
+                <li>Modelamiento del proceso de selección sexual.</li>
+                <li>Simulaciones computacionales.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Horas</td>
+        <td>Total 70 horas (presenciales 9 horas)</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<table class="table table-striped table-bordered">
+    <tbody>
+    <tr>
+        <th>Módulo 6</th>
+        <th>¿Cómo enseñar Modelamiento Matemático con actividades fuera de la sala de clase?</th>
+    </tr>
+    <tr>
+        <td>Descripción del módulo</td>
+        <td>En este módulo los participantes aprenderán a enseñar a construir modelos concretos y matemáticos en
+            diversas actividades a realizarse en el patio.
+        </td>
+    </tr>
+    <tr>
+        <td>Contenidos</td>
+        <td>
+            <ul>
+                <li>Preparación de la actividad.</li>
+                <li>Construcción de cohetes de agua.</li>
+                <li>Construcción de catapultas.</li>
+                <li>Construcción de botes de hormigón o con baldosas.</li>
+                <li>Mediciones y registro de datos.</li>
+                <li>Construcción de modelos matemáticos..</li>
+                <li>Simulaciones computacionales.</li>
+                <li>Torneos.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Horas</td>
+        <td>Total 70 horas (presenciales 9 horas)</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<table class="table table-striped table-bordered">
+    <tbody>
+    <tr>
+        <th>Módulo 7</th>
+        <th>Estudio de clases de Modelamiento Matemático</th>
+    </tr>
+    <tr>
+        <td>Descripción del módulo</td>
+        <td>En este módulo los participantes aprenderán a analizar clases de matemáticas y en particular lecciones
+            Modelamiento Matemático.
+        </td>
+    </tr>
+    <tr>
+        <td>Contenidos</td>
+        <td>
+            <ul>
+                <li>¿Qué observar?</li>
+                <li>Registros visuales versus sonido.</li>
+                <li>¿Cómo analizar lo que se dice?.</li>
+                <li>Conteo de palabras claves: nombres, categorías, conectores.</li>
+                <li>Registros en tercera persona versus primera persona.</li>
+                <li>Conteo de miradas.</li>
+                <li>Registro de estados emocionales.</li>
+                <li>Beneficios y limitaciones del tipo de registro.</li>
+                <li>Perfiles psicológicos, físicos y sociométricos.</li>
+                <li>Redes sociales en el aula.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Horas</td>
+        <td>Total 70 horas (presenciales 9 horas)</td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<table class="table table-striped table-bordered">
+    <tbody>
+    <tr>
+        <th>Módulo 8</th>
+        <th>¿Cómo evaluar el aprendizaje del Modelamiento Matemático?</th>
+    </tr>
+    <tr>
+        <td>Descripción del módulo</td>
+        <td>En este módulo los participantes revisarán estrategias de medición en línea, formativa y evaluativa de las
+            habilidades de modelamiento matemático así como los objetivos de aprendizaje.
+        </td>
+    </tr>
+    <tr>
+        <td>Contenidos</td>
+        <td>
+            <ul>
+                <li>Diseño de test y actividades.</li>
+                <li>Diseño de test y actividades en línea.</li>
+                <li>Reportes en línea.</li>
+                <li>Modelamiento matemático en Números.</li>
+                <li>Modelamiento matemático en Algebra.</li>
+                <li>Modelamiento matemático en Geometría.</li>
+                <li>Modelamiento matemático en Estadística y Probabilidades.</li>
+                <li>Minería de datos educacionales.</li>
+                <li>Estudio de impacto de unos objetivos de aprendizaje sobre otros.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Horas</td>
+        <td>Total 70 horas (presenciales 9 horas)</td>
+    </tr>
+    </tbody>
+</table>
+
+<h5>Total de horas programa: 560 horas (presenciales 72 horas).</h5>
+
+<br><br>
+
+<div class="alert alert-success">
+    <h3>Intenso uso de tecnología</h3>
+    <h5>
+        <ol>
+            <li>Video streaming semanal con participación en línea.</li>
+            <li>Análisis entre pares de videos de clases soportado por plataforma web.</li>
+            <li>Intenso uso de plataforma por estudiantes propios de cada participante.</li>
+            <li>Actividades concretas.
+                <ul>
+                    <li>Catapultas.</li>
+                    <li>Cohetes.</li>
+                    <li>Botes de hormigón.</li>
+                </ul>
+            </li>
+            <li>Juegos en línea y torneos entre escuelas de profesores participantes.</li>
+        </ol>
+    </h5>
+    <br>
+    <table style="width:100%;">
+        <tr>
+            <td style="text-align:left;"><img src="img/img_c1.png" alt="img" class="img-polaroid"/></td>
+            <td style="text-align:center;"><img src="img/img_c2.png" alt="img" class="img-polaroid"/></td>
+            <td style="text-align:right;"><img src="img/img_c3.png" alt="img" class="img-polaroid"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="text-align:center;">
+                <br>
+                <a href="#modal-video" role="button" class="btn link-video-futbol" data-toggle="modal" video="DiMiXGLbm24" video-title="Video: Fútbol">Video Modelamiento en el Fútbol</a>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+</div>
+<hr id="evaluacion">
+<br>
+
+<p class="lead">EVALUACIÓN</p>
+La evaluación del curso se realizará a través de trabajos de carácter aplicado en cada uno de los módulos y una
+nota del trabajo final.<br><br>
+
+En su conjunto las evaluaciones correspondientes a las temáticas desarrolladas a lo largo del diplomado contarán
+con una ponderación del 80% sobre la nota final del curso.<br><br>
+
+Requisitos Aprobación Módulos:<br>
+<ul>
+    <li>100% asistencias presenciales los sábados.</li>
+    <li>90% asistencias miércoles clases por videostreaming.</li>
+    <li>200 ejercicios realizados por cada alumno del participante de uno de sus cursos, todos hechos cada semana en
+        plataforma internet.
+    </li>
+    <li>100% grabación y envío de videos</li>
+    <li>Aprobación de todos los videos, uno por semana, evaluado por pares</li>
+    <li>Aprobación presentación presencial mensual, cuya nota mínima de aprobación es un cuatro (4,0).</li>
+</ul>
+
+<br>
+Además los estudiantes deberán desarrollar un trabajo final (tesina) en el que se haga explícita la adquisición
+de conocimientos teóricos, se revise y ajusten los trabajos de cada módulo, se planifique y ejecute una clase
+con modelamiento matemático, los estudiantes realicen en dos sesiones las actividades en la plataforma, se
+registre en video la clase y se analice el impacto obtenido. Este trabajo tendrá un valor de 20% sobre la nota
+final.<br><br>
+
+En resumen se realizarán:<br>
+<ul>
+    <li>Ocho evaluaciones (una por cada unidad temática: trabajo aplicado correspondientes al 80% de la nota final).
+    </li>
+    <li>Un trabajo final de curso de carácter conceptual y aplicado correspondiente al 20% de la nota final.</li>
+</ul>
+<br>
+La escala de nota utilizada será de uno (1,0) a siete (7,0), siendo la nota mínima de aprobación un cuatro
+(4,0). Todas las notas de los 8 módulos debe ser como mínimo un cuatro (4,0) así como la nota mínima de la
+evaluación final debe ser cuatro (4,0). La nota máxima es un siete (7,0).<br><br>
+
+<br>
+<hr id="equipo">
+<br>
+
+<p class="lead">EQUIPO DOCENTE DEL PROGRAMA</p>
+
+El equipo docente es multidisciplinario, integrando investigadores y profesores con gran experiencia en el aula y en el
+uso de plataformas web.<br><br>
+<ul>
+    <li><b>Roberto Araya Schulz</b>, Ph.D. Ingeniería Eléctrica, Universidad de California Los Angeles y Magíster
+        Matemáticas Aplicadas, Universidad de Chile, investigador asociado al CIAE.
+    </li>
+    <li><b>Pablo Dartnell Roy</b>, Ph.D. Matemáticas, Yale University e Ingeniero Civil Matemático, Universidad de
+        Chile, investigador asociado al CIAE y al Centro de Modelamiento de la Universidad de Chile.
+    </li>
+    <li><b>Leonor Varas Scheuch</b>, Doctor Ciencias de la Ingeniería especializado en Modelamiento Matemático,
+        Universidad de Chile, e Ingeniero Civil Matemático, Universidad de Chile, investigador asociado al CIAE y al
+        Centro de Modelamiento Matemático de la Universidad de Chile.
+    </li>
+    <li><b>Paulina Jaure Echeverría</b>, Profesora de Estado en Matemáticas y Computación, USACH, y postítulo en
+        Didácticas de las Matemáticas, Pontificia Universidad Católica de Valparaíso.
+    </li>
+    <li><b>Elena Salinas Vásquez</b>, profesora de Educación General Básica Universidad de Chile, Magíster en Desarrollo
+        Cognitivo, Universidad Diego Portales.
+    </li>
+</ul>
+
+<br>
+<hr id="faq">
+<br>
+
+<p class="lead">PREGUNTAS FRECUENTES</p>
+
+<ul>
+    <li>Requisitos</li>
+    <ul>
+        <li><b>¿Qué requisitos existen para poder tomar el Diplomado?</b><br>Debe ser titulado y hacer clase de
+            matemáticas en
+            un curso de educación básica y/o media.
+        </li>
+        <li><b>Soy de un lugar muy alejado, por lo que no puedo viajar una vez al mes a Santiago. ¿Qué puedo
+            hacer?</b><br>Si
+            reúne a un gran número de interesados de su localidad puede contactarnos para estudiar la factibilidad que
+            uno de nuestros profesores viaje esos sábados a su localidad.
+        </li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Técnicas</li>
+    <ul>
+        <li><b>Yo no sé grabar ni subir videos. ¿Cómo lo hago?</b><br>En el Diplomado se enseñará este proceso en la
+            primera
+            clase presencial. Además se recomendará cámaras y cómo asegurar que el sonido e imágenes se capturen bien.
+        </li>
+        <li><b>No existe plataforma internet en mi establecimiento para que los estudiantes de mi curso realicen
+            ejercicios. ¿Cómo lo hago?</b><br>El Diplomado entrega acceso a la plataforma conectaideas para usted y los
+            estudiantes de su curso. En la primera sesión aprenderá a operarla.
+        </li>
+        <li><b>En mi establecimiento existe otra plataforma ¿Cómo lo hago?</b><br>El Diplomado usará la plataforma
+            conectaideas
+            de manera que todos los participantes compartan una misma experiencia y tipos de actividad. Eso no significa
+            deje de usar la otra plataforma para otras actividades ajenas al Diplomado.
+        </li>
+        <li><b>¿Por qué debe participar un curso mío y tengo que inscribir a los estudiantes de ese curso?</b><br>En
+            este
+            diplomado se aprende enseñando y haciendo que los estudiantes del participante pongan en práctica el
+            modelamiento matemático. La plataforma nos dice cómo lo están haciendo y lo hace de una manera uniforme, de
+            manera que nos facilita enormemente el proceso de aprender de la experiencia de otros participantes y sus
+            estudiantes.
+        </li>
+        <li><b>¿Podemos mis estudiantes y yo conectarnos a la plataforma desde la casa?</b><br>Sí. Puede conectarse a la
+            plataforma desde cualquier lugar con acceso a internet y acceder de allí a todos los ejercicios.
+        </li>
+        <li><b>¿Qué ancho de banda necesito?</b><br>En su establecimiento el ideal es la fibra óptica que instala
+            ENLACES. Lo
+            recomendado es 100kbps por cada computador conectado a internet, esto significa que si el laboratorio de su
+            colegio tiene 40 computador se requiere de un enlace a internet de 4Mbps.
+        </li>
+        <li><b>¿Qué puedo hacer si me interesa el Diplomado y no cuento con computador propio?</b><br>Puede utilizar uno
+            del
+            establecimiento.
+        </li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Horario</li>
+    <ul>
+        <li><b>¿Cuántas horas realmente me ocupará?</b><br>Son 9 horas presenciales cada mes, que se logran asistiendo
+            un
+            sábado en cada mes. Gran parte de las actividades las realizará en su sala de clases durante las clases
+            normales. Cada semana debe grabar un video de 45 minutos y subir la grabación a internet. Además debe hacer
+            que sus estudiantes realicen actividades de modelamiento en la plataforma web del diplomado. Adicionalmente
+            debe participar vía internet cada semana de una sesión de 2 horas los miércoles de 16:00 a 18:00 por video
+            streaming. Además cada semana deberá revisar 4 videos (de 45 minutos cada uno) producidos por otros
+            participantes del diplomado.
+        </li>
+        <li><b>¿Puedo ver el video streaming desde mi establecimiento?</b><br>Lo puede hacer desde su establecimiento,
+            casa y/o
+            un café internet.
+        </li>
+        <li><b>¿Puedo ver los videos de los colegas participantes en el fin de semana?</b><br>Sí. Lo puede ver en casa,
+            lo
+            puede ver en el establecimiento o en celulares con plan internet que pueda ver videos youtube.
+        </li>
+        <li><b>¿Qué sucederá si no puedo cumplir con el 100 % de asistencia los días sábados, debido a alguna razón de
+            salud o familiar que realmente se justifique?</b><br>Casos especiales serán analizados en forma
+            personalizada.
+        </li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Financieras</li>
+    <ul>
+        <li><b>¿Cómo se si mi establecimiento puede financiar mi Diplomado por ley SEP?</b><br>Consulte si su
+            establecimiento
+            ha incorporado en su PME (Proyecto de Mejoramiento Educativo) como acción a realizar el perfeccionamiento y
+            capacitación de los profesores para mejorar los aprendizajes de los alumnos prioritarios.
+        </li>
+        <li><b>No tengo cámara ni micrófono ni implementos para realizar el Diplomado. ¿Qué puedo hacer?</b><br>Consulte
+            si su
+            establecimiento ha incorporado en su PME (Proyecto de Mejoramiento Educativo) la adquisición de equipamiento
+            para mejorar los aprendizajes de los alumnos prioritarios.
+        </li>
+    </ul>
+</ul>
+
+<ul>
+    <li>Otras</li>
+    <ul>
+        <li><b>¿A quién debo dirigirme para hacer consultas sobre el diplomado?</b><br>En modelamiento@ciae.uchile.cl un
+            equipo
+            del diplomado estará atengo a responder sus consultas.
+        </li>
+    </ul>
+</ul>
+
+<br>
+<hr id="masinformacion">
+<br>
+ 
+<p class="lead">PREINSCRIPCIÓN</p>
+
+La inscripción al diplomado debe realizarlo en el siguiente <a href="inscripcion.html" target="_blank">LINK</a>
+<!-- Pre inscríbase y reserve así su participación completando los siguientes datos: -->
+
+<!-- Begin MailChimp Signup Form -->
+<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup {
+        background:#fff;
+        clear:left;
+        font:14px Helvetica, Arial, sans-serif;
+    }
+
+        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup" style="visibility:hidden; height:0px ">
+    <form action="http://torneoslatinoamericanos.us5.list-manage.com/subscribe/post?u=eab15cafb823899f2a1055676&amp;id=be84503908"
+          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+          target="_blank" novalidate>
+
+        <div class="indicates-required"><span class="asterisk">*</span> indica un campo obligatorio</div>
+        <div class="mc-field-group">
+            <label for="mce-EMAIL">Correo Electrónico <span class="asterisk">*</span>
+            </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+        <div class="mc-field-group">
+            <label for="mce-FNAME">Nombres <span class="asterisk">*</span>
+            </label>
+            <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+        </div>
+        <div class="mc-field-group">
+            <label for="mce-LNAME">Apellidos <span class="asterisk">*</span>
+            </label>
+            <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+        </div>
+        <div class="mc-field-group">
+            <label for="mce-MMERGE3">Nombre Establecimiento Educacional </label>
+            <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
+        </div>
+        <div class="mc-field-group">
+            <label for="mce-MMERGE5">Región </label>
+            <select name="MMERGE5" class="" id="mce-MMERGE5">
+                <option value=""></option>
+                <option value="Arica y Parinacota">Arica y Parinacota</option>
+                <option value="Tarapaca">Tarapaca</option>
+                <option value="Antofagasta">Antofagasta</option>
+                <option value="Atacama">Atacama</option>
+                <option value="Coquimbo">Coquimbo</option>
+                <option value="Valparaíso">Valparaíso</option>
+                <option value="Metropolitana">Metropolitana</option>
+                <option value="O'Higgins">O'Higgins</option>
+                <option value="Maule">Maule</option>
+                <option value="Biobío">Biobío</option>
+                <option value="Araucanía">Araucanía</option>
+                <option value="Los Ríos">Los Ríos</option>
+                <option value="Los Lagos">Los Lagos</option>
+                <option value="Aysén">Aysén</option>
+                <option value="Magallanes">Magallanes</option>
+
+            </select>
+        </div>
+        <div class="mc-field-group">
+            <label for="mce-MMERGE4">Ciudad </label>
+            <input type="text" value="" name="MMERGE4" class="" id="mce-MMERGE4">
+        </div>
+        <div class="mc-field-group">
+            <label for="mce-MMERGE6">Comuna </label>
+            <input type="text" value="" name="MMERGE6" class="" id="mce-MMERGE6">
+        </div>
+        <div class="mc-field-group">
+            <label for="mce-MMERGE7">Nivel en el cual enseña </label>
+            <input type="text" value="" name="MMERGE7" class="" id="mce-MMERGE7">
+        </div>
+        <div class="mc-field-group">
+            <label for="mce-MMERGE8">Teléfono de contacto <span class="asterisk">*</span>
+            </label>
+            <input type="text" value="" name="MMERGE8" class="required" id="mce-MMERGE8">
+        </div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <div class="clear"><input type="submit" value="Enviar preinscripción" name="subscribe"
+                                  id="mc-embedded-subscribe" class="button"></div>
+    </form>
+</div>
+<script type="text/javascript">
+var fnames = new Array();
+var ftypes = new Array();
+fnames[0] = 'EMAIL';
+ftypes[0] = 'email';
+fnames[1] = 'FNAME';
+ftypes[1] = 'text';
+fnames[2] = 'LNAME';
+ftypes[2] = 'text';
+fnames[3] = 'MMERGE3';
+ftypes[3] = 'text';
+fnames[5] = 'MMERGE5';
+ftypes[5] = 'dropdown';
+fnames[4] = 'MMERGE4';
+ftypes[4] = 'text';
+fnames[6] = 'MMERGE6';
+ftypes[6] = 'text';
+fnames[7] = 'MMERGE7';
+ftypes[7] = 'text';
+fnames[8] = 'MMERGE8';
+ftypes[8] = 'text';
+try {
+    var jqueryLoaded = jQuery;
+    jqueryLoaded = true;
+} catch (err) {
+    var jqueryLoaded = false;
+}
+var head = document.getElementsByTagName('head')[0];
+if (!jqueryLoaded) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+    head.appendChild(script);
+    if (script.readyState && script.onload !== null) {
+        script.onreadystatechange = function () {
+            if (this.readyState == 'complete') mce_preload_check();
+        }
+    }
+}
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+head.appendChild(script);
+var err_style = '';
+try {
+    err_style = mc_custom_error_style;
+} catch (e) {
+    err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+}
+var head = document.getElementsByTagName('head')[0];
+var style = document.createElement('style');
+style.type = 'text/css';
+if (style.styleSheet) {
+    style.styleSheet.cssText = err_style;
+} else {
+    style.appendChild(document.createTextNode(err_style));
+}
+head.appendChild(style);
+setTimeout('mce_preload_check();', 250);
+
+var mce_preload_checks = 0;
+function mce_preload_check() {
+    if (mce_preload_checks > 40) return;
+    mce_preload_checks++;
+    try {
+        var jqueryLoaded = jQuery;
+    } catch (err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    try {
+        var validatorLoaded = jQuery("#fake-form").validate({});
+    } catch (err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    mce_init_form();
+}
+function mce_init_form() {
+    jQuery(document).ready(function ($) {
+        var options = { errorClass:'mce_inline_error', errorElement:'div', onkeyup:function () {
+        }, onfocusout:function () {
+        }, onblur:function () {
+        }  };
+        var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+        $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+        options = { url:'http://torneoslatinoamericanos.us5.list-manage2.com/subscribe/post-json?u=eab15cafb823899f2a1055676&id=be84503908&c=?', type:'GET', dataType:'json', contentType:"application/json; charset=utf-8",
+            beforeSubmit:function () {
+                $('#mce_tmp_error_msg').remove();
+                $('.datefield', '#mc_embed_signup').each(
+                        function () {
+                            var txt = 'filled';
+                            var fields = new Array();
+                            var i = 0;
+                            $(':text', this).each(
+                                    function () {
+                                        fields[i] = this;
+                                        i++;
+                                    });
+                            $(':hidden', this).each(
+                                    function () {
+                                        var bday = false;
+                                        if (fields.length == 2) {
+                                            bday = true;
+                                            fields[2] = {'value':1970};//trick birthdays into having years
+                                        }
+                                        if (fields[0].value == 'MM' && fields[1].value == 'DD' && (fields[2].value == 'YYYY' || (bday && fields[2].value == 1970) )) {
+                                            this.value = '';
+                                        } else if (fields[0].value == '' && fields[1].value == '' && (fields[2].value == '' || (bday && fields[2].value == 1970) )) {
+                                            this.value = '';
+                                        } else {
+                                            if (/\[day\]/.test(fields[0].name)) {
+                                                this.value = fields[1].value + '/' + fields[0].value + '/' + fields[2].value;
+                                            } else {
+                                                this.value = fields[0].value + '/' + fields[1].value + '/' + fields[2].value;
+                                            }
+                                        }
+                                    });
+                        });
+                return mce_validator.form();
+            },
+            success:mce_success_cb
+        };
+        $('#mc-embedded-subscribe-form').ajaxForm(options);
+        /*
+         * Translated default messages for the jQuery validation plugin.
+         * Locale: ES
+         */
+        jQuery.extend(jQuery.validator.messages, {
+            required:"Este campo es obligatorio.",
+            remote:"Por favor, rellena este campo.",
+            email:"Por favor, escribe una dirección de correo válida",
+            url:"Por favor, escribe una URL válida.",
+            date:"Por favor, escribe una fecha válida.",
+            dateISO:"Por favor, escribe una fecha (ISO) válida.",
+            number:"Por favor, escribe un número entero válido.",
+            digits:"Por favor, escribe sólo dígitos.",
+            creditcard:"Por favor, escribe un número de tarjeta válido.",
+            equalTo:"Por favor, escribe el mismo valor de nuevo.",
+            accept:"Por favor, escribe un valor con una extensión aceptada.",
+            maxlength:jQuery.validator.format("Por favor, no escribas más de {0} caracteres."),
+            minlength:jQuery.validator.format("Por favor, no escribas menos de {0} caracteres."),
+            rangelength:jQuery.validator.format("Por favor, escribe un valor entre {0} y {1} caracteres."),
+            range:jQuery.validator.format("Por favor, escribe un valor entre {0} y {1}."),
+            max:jQuery.validator.format("Por favor, escribe un valor menor o igual a {0}."),
+            min:jQuery.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
+        });
+
+    });
+}
+function mce_success_cb(resp) {
+    $('#mce-success-response').hide();
+    $('#mce-error-response').hide();
+    if (resp.result == "success") {
+        $('#mce-' + resp.result + '-response').show();
+        $('#mce-' + resp.result + '-response').html(resp.msg);
+        $('#mc-embedded-subscribe-form').each(function () {
+            this.reset();
+        });
+    } else {
+        var index = -1;
+        var msg;
+        try {
+            var parts = resp.msg.split(' - ', 2);
+            if (parts[1] == undefined) {
+                msg = resp.msg;
+            } else {
+                i = parseInt(parts[0]);
+                if (i.toString() == parts[0]) {
+                    index = parts[0];
+                    msg = parts[1];
+                } else {
+                    index = -1;
+                    msg = resp.msg;
+                }
+            }
+        } catch (e) {
+            index = -1;
+            msg = resp.msg;
+        }
+        try {
+            if (index == -1) {
+                $('#mce-' + resp.result + '-response').show();
+                $('#mce-' + resp.result + '-response').html(msg);
+            } else {
+                err_id = 'mce_tmp_error_msg';
+                html = '<div id="' + err_id + '" style="' + err_style + '"> ' + msg + '</div>';
+
+                var input_id = '#mc_embed_signup';
+                var f = $(input_id);
+                if (ftypes[index] == 'address') {
+                    input_id = '#mce-' + fnames[index] + '-addr1';
+                    f = $(input_id).parent().parent().get(0);
+                } else if (ftypes[index] == 'date') {
+                    input_id = '#mce-' + fnames[index] + '-month';
+                    f = $(input_id).parent().parent().get(0);
+                } else {
+                    input_id = '#mce-' + fnames[index];
+                    f = $().parent(input_id).get(0);
+                }
+                if (f) {
+                    $(f).append(html);
+                    $(input_id).focus();
+                } else {
+                    $('#mce-' + resp.result + '-response').show();
+                    $('#mce-' + resp.result + '-response').html(msg);
+                }
+            }
+        } catch (e) {
+            $('#mce-' + resp.result + '-response').show();
+            $('#mce-' + resp.result + '-response').html(msg);
+        }
+    }
+}
+
+</script>
+<!--End mc_embed_signup-->
+
+<br>
+<hr>
+<center><b>La Universidad de Chile se reserva el derecho de no dictar el Programa por los motivos que estime
+    conveniente</b></center>
+
+
+</div>
+</div>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38027378-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</body>
+</html>

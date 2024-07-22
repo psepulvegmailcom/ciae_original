@@ -1,0 +1,3 @@
+Se certifica por medio del presente que <b>{nombre}</b> particip&oacute; en el Seminario para Futuros Profesores "La Resoluci&oacute;n de Problemas y la Matem&aacute;tica Escolar" dictado por los profesores Patricio Felmer, Flavio Gu&iacute;&ntilde;ez, Josefa Perdomo y Valeria Randolph, los d&iacute;as 18 y 19 octubre de 2013.
+
+<!-- INCLUDE BLOCK : www/templates/web/certificados/bases/base_cierre.tpl --> 

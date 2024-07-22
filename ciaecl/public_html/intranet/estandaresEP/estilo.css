@@ -1,0 +1,60 @@
+a:link { 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight:normal;
+	font-variant: normal;
+    color: #333333; 
+}
+
+body{ 
+   background-color: #FFFFFF; 
+}
+
+
+.titulos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #000000;
+}
+.ventana_principal {
+	border: 2px solid #000000;
+}
+.titulo_tabla {
+	border: 1px solid #000000;
+	background-color: #999999;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#000000; 
+	font-size: 11px;
+	height: 18px;
+}
+.celdas_tabla {
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color:#000000; 
+}
+.botones {
+	background-color: #999999;
+	border: 1px solid #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	height: 20px;
+	font-weight: normal;
+	color:#000000; 
+}
+.texto_libre {
+	border: 0px solid #000000;
+	background-color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-position: top;
+	color:#000000; 
+}

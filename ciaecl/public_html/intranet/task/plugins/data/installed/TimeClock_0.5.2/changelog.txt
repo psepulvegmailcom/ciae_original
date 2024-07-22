@@ -1,0 +1,50 @@
+Version 0.5.2 - March 02, 2007
+- Fixed comment format in index.php
+
+Version 0.5.1 - February 28, 2007
+- Built for TaskFreak MultUser 0.5.7
+
+Version 0.5.0 - February 2, 2007
+- Built for TaskFreak MultUser 0.5.5
+- Fixed bug in Project view. It was multiplying the total time by the number of members.
+- Added German Translation (Thanks Nils!)
+
+Version 0.4.0 - January 22, 2007
+- Built for TaskFreak MultiUser 0.5.4
+- Added "Total Time" column to Manage > Projects
+- Added Portuguese Translation (Thanks fredcwbr!)
+- Added comments to show Time Clock edits and additions in code
+
+Version 0.3.1 - November 30, 2006
+- Added Dutch Translation (Thanks Melle!)
+- Added Spanish Translation (Thanks pablocostas!)
+
+Version 0.3.0 - November 17, 2006
+- Added ability to change time in edit panel
+- Added total time in hours to time tab
+
+Version 0.2.3 - October 28, 2006
+- Built for TaskFreak MultiUser 0.5.2
+- Fixed delete task so that it also deletes its time from database
+
+Version 0.2.2 - October 21, 2006
+- Added Polish Translation (Thanks eastman!)
+
+Version 0.2.1 - October 18, 2006
+- Fixed error in Time Tab when no time had been logged yet
+
+Version 0.2.0 - October 17, 2006
+- Built for TaskFreak MultiUser 0.5.1
+- Added "time" tab to View Panel. It shows total time recorded for each user.
+- Fixed date sort in History tab.
+
+Version 0.1.2 - October 3, 2006
+- Added "var" to line 531 and 532 of js/freak.js. Fixes Javascript error in IE.
+- Added 'onclick="this.blur()"' to line 279 of index.php. Takes the focus from the button.
+
+Version 0.1.1 - September 29, 2006
+- Fixed 31 day limit for Javascript timer. Now it will show unlimited days logged.
+- Replaced ALL commas "," from totalTime in freak_time() function.
+
+Version 0.1.0 - September 26, 2006
+- Time Clock built for TaskFreak MultiUser 0.4.2

@@ -1,0 +1,2 @@
+<!-- AYUDA DE EXTENSIONES PERMITIDAS DE LOS ARCHIVOS -->
+<br><!--<img src="images/Info.ico" border="0" width="16px" height="16px">--> Recuerde que los formatos permitidos son : <b>pdf, doc, docx, zip, jpg, gif, png, jpeg, rar</b>  

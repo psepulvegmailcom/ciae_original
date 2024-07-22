@@ -1,0 +1,74 @@
+<?
+
+	$envio = $_POST['envio'];
+	if(!isset($envio))
+		$envio = false;
+	else
+	{	
+		$text_editor = $_POST['text_editor'];
+		$text_editor = str_replace("\n"," ",$text_editor);
+		$text_editor = str_replace("\r"," ",$text_editor);
+	}
+	$input_tag = $_GET['input'];
+	$form_tag = $_GET['form'];
+	
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN""http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Editor</title>
+	<script type="text/javascript">
+		var djConfig = {
+			isDebug: false
+		};
+	</script>
+	<script type="text/javascript" src="./dojo.js"></script>
+	<script>
+		dojo.require("dojo.widget.Editor2");
+	</script>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			padding: 0;
+			margin: 0;
+			height: 650px;
+		}
+
+		.page {
+			padding: 10px 10px 10px 10px;
+		}
+	</style>
+</head>
+<body><br>
+	<script>
+	
+	</script>
+<!--  items="formatblock;|;insertunorderedlist;insertorderedlist;|;bold;italic;underline;strikethrough;|;createLink;" -->
+<form name='editor' id='editor' method="POST" >
+<center>	<input type='button' name='cerrard' value='Cerrar Sin Cambios' onClick='javascript:cerrarVentana();'> 
+	<input type='submit' name='guardar' value='Guardar Cambios' > </center><br>
+<textarea  id="text_editor" dojoType="Editor2" name='text_editor'  style= '   border: solid 1px #cccccc; height:400px; overflow:auto;' rows="2" cols="50">
+</textarea><br>
+<center>	<input type='button' name='cerrard' value='Cerrar Sin Cambios' onClick='javascript:cerrarVentana();'> 
+	<input type='submit' name='guardar' value='Guardar Cambios' > </center>
+	<input type='hidden' name='envio' value='true' > 
+	
+	</form>
+	<script>var texto = opener.document.<?echo $form_tag.".".$input_tag; ?>.value;
+	document.getElementById("text_editor").value = texto;
+	function cerrarVentana()
+	{
+		window.close();
+	}
+
+	<?
+	 if($envio)
+	 {
+			
+		echo  "opener.document.".$form_tag.".".$input_tag.".value='".$text_editor."';
+		cerrarVentana();";
+	}
+	?>
+	</script>
+</body>
+</html>

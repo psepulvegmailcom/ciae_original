@@ -1,0 +1,3 @@
+Se certifica por medio  del presente que <b>{nombre} {apellidos}</b> particip&oacute; en el Taller para Profesores de Educaci&oacute;n B&aacute;sica: "Resoluci&oacute;n de Problemas en Acci&oacute;n" dictado por los profesores Patricio Felmer, Flavio Gui&ntilde;ez, Sim&oacute;n Modeste, Josefa Perdomo-D&iacute;az, el d&iacute;a 14 de junio de 2014. 
+
+<!-- INCLUDE BLOCK : www/templates/web/certificados/bases/base_cierre.tpl --> 

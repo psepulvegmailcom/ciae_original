@@ -1,0 +1,6 @@
+DELETE FROM ext_muestra WHERE  id_muestra = 192 LIMIT 1;
+DELETE FROM ext_muestra_persona_vista WHERE  fk_id_muestra = 192 ;
+DELETE FROM ext_muestra WHERE  id_muestra = 191 LIMIT 1;
+DELETE FROM ext_muestra_persona_vista WHERE  fk_id_muestra = 191 ;
+DELETE FROM ext_muestra WHERE  id_muestra = 190 LIMIT 1;
+DELETE FROM ext_muestra_persona_vista WHERE  fk_id_muestra = 190 ; 

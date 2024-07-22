@@ -1,0 +1,3 @@
+Se certifica por medio  del presente que <b>{nombre} {apellidos}</b> particip&oacute; en el Taller para Futuros Profesores: "El modelamiento y la matem&aacute;tica escolar" dictado por los profesores Patricio Felmer, Josefa Perdomo-D&iacute;az, Natalia Ruiz, Carmen Gloria Espinoza y Armando Peri, los d&iacute;as 30 y 31 de mayo de 2014. 
+
+<!-- INCLUDE BLOCK : www/templates/web/certificados/bases/base_cierre.tpl --> 

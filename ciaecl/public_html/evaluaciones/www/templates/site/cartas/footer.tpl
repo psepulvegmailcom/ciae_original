@@ -1,0 +1,1 @@
+</td></tr>	<tr><td style="padding-left:30px;text-align:left">	<strong>Comite Organizador</strong><br/>	<a href="http://www.ciie2012.cl/">http://www.ciie2012.cl</a></td>   </tr>	<tr>      <td><img src="http://www.ciie2012.cl/www/imag/carta_footer.JPG" alt=""></td>    </tr>  </tbody></table></div>

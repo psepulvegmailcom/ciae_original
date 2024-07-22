@@ -1,0 +1,7 @@
+﻿&noticia1=Destacados conferencistas participaron en CIIE.
+&noticia2=Ad portas del Bicentenario, la innovación continúa siendo un eje central de la política de Textos Escolares.
+&noticia3=Aprendizajes de calidad en todos los estudiantes, independientemente de su condición social, económica o territorial.
+&noticia4=Investigación para una Mejor Educación en el Bicentenario de Chile.
+&noticia5=SIMCE: Los desafíos para mejorar la calidad y equidad educativa continúan presentes.
+&noticia6=Primer congreso interdisciplinario de investigación.
+&total=4&estado=listo&

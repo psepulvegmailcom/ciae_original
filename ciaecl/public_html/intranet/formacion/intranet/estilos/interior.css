@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("base.css");
+@import url("botonera.css");
+@import url("inferior.css");
+@import url("contenidos.css");
+@import url("menus.css");
+@import url("tablas.css");
+@import url("datos.css");
+@import url("mapa.css");
+@import url("pestanas.css");

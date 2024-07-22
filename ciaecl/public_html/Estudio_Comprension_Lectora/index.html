@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Experimento</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="jspsych/jspsych.js"></script>
+    <script src="plugins/jspsych-survey-multi-choice.js"></script>
+    <script src="plugins/jspsych-survey-multi-choice-cuest.js"></script>
+    <script src="plugins/jspsych-fullscreen-sp.js"></script>
+    <script src="plugins/jspsych-survey-text.js"></script>
+    <script src="plugins/jspsych-serial-reaction-time-mouse.js"></script>
+    <script src="plugins/jspsych-survey-likert.js"></script>
+    <script src="plugins/jspsych-html-keyboard-response.js"></script>
+    <script src="plugins/jspsych-html-button-response.js"></script>
+    <script src="plugins/jspsych-animation.js"></script>
+    <script src="plugins/jspsych-preload.js"></script>
+    <script src="data_items/MCQdata.js"></script>
+    <script src="data_items/METASdata.js"></script>
+    <script src="data_items/JUEGOSdata.js"></script>
+    <script src="data_items/INSTRUCCIONESdata.js"></script>
+    <script src="data_items/IMAGENESdata.js"></script>
+    <link rel="stylesheet" href="jspsych/jspsych.css">
+  </head>
+  <body></body>
+  
+  <script>
+  // Contacto con server
+  ///////////////////////////////////////////////////////////////////////////////////////
+  // funcion para actualizar la base de datos de participantes
+  // y entonces ejecutar get_user()   
+  let unique = (names) => names.filter((v,i) => names.indexOf(v) === i)
+  
+  function uptadeDataBase(){
+    if (modo_online){
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          console.log('UptadeDataBase function')
+          get_user();
+        }
+    }; 
+    xhr.open('POST', 'php_files/write_data_part.php'); // 'write_data.php' is the path to the php file described above.
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(null);
+    };
+  };
+
+  // Funcion para obtener el id del usuario y entonces ejecutar init_experiment
+  function get_user() {
+    var user_request = new XMLHttpRequest();
+    user_request.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var id_user = this.responseText;  
+        console.log(('get_user function: '+ id_user));
+        init_experiment('oficial', id_user);
+      }
+    };
+    user_request.open("GET", "php_files/get_user.php?q=" + "revision", true);
+    user_request.send(); 
+  };
+
+  // Función que obtiene la base de datos gente.txt actualizada, busca cuantas veces el 
+  // participante ha ejecutado el experimento, y con ello asigna un numero de condicion
+  // para el MCQ simple y el MCQ de transferencia.
+  function init_experiment(modo, id_user) {
+    var revision_request = new XMLHttpRequest();
+    revision_request.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        // Guardar la base de datos en gente_txt
+        var gente_txt = this.responseText;  
+        // Obtener el numero de veces que ha entrado el usuario a la revision
+        // y el numero del participante
+        console.log(gente_txt);
+        var gente_data = gente_txt.split("***");
+        console.log(gente_data);
+
+        var id_user_str = (id_user.toString()).replace(/ /g, "");
+        var revision = 0;
+
+        var part_num = -1;
+        for(var i = 0; i < gente_data.length; ++i){
+          if(gente_data[i] == id_user_str){
+            revision++;
+          };  
+        };
+        console.log(unique(gente_data));
+        console.log((unique(gente_data)).indexOf(id_user_str));
+        var part_num = ((unique(gente_data)).indexOf(id_user_str))+1;
+
+        // Inicializar los estimulos del experimento y el experimento
+        if (modo == 'revision') {
+          var timeline = data_experimento(((revision-1)%6)+1, ((revision-1)%24)+1,id_user, revision, modo, revision);
+        } else if (modo == 'oficial'){
+          console.log('Modo oficial.')
+          var timeline = data_experimento(((part_num-1)%6)+1, ((part_num-1)%24)+1,id_user, part_num, modo, revision);
+        }
+        jsPsych.init({timeline: timeline}); 
+      };
+    };
+    revision_request.open("GET", "php_files/gente.txt", true);
+    revision_request.send(); 
+  };
+  
+  // funcion para guardar los datos de todo el experimento en la pantalla final
+  function saveData(name, data){
+    if (modo_online){
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'php_files/write_data.php'); // 'write_data.php' is the path to the php file described above.
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({filename: name, filedata: data}));
+    };
+  };
+  
+  // Función que entrega el timeline del experimento dadas las condiciones del 
+  // MCQ simple (condicion) y el MCQ de interferencia (condicion_inter)
+
+  function data_experimento(condicion, condicion_inter, id_user, index_part, modo, version){
+  // mensaje de bienvenida
+  ///////////////////////////////////////////////////////////////////////////////////////
+
+  var cond_prompt = '<p>';
+  if (modo == 'revision') {
+    cond_prompt += '<br> Condición MCQ simple asignada: ';
+    cond_prompt += condicion;
+    cond_prompt += '<br> Condición MCQ interferencia asignada: ';
+    cond_prompt += condicion_inter + '<br></p>';
+  } else if (modo == 'oficial'){
+    cond_prompt += '<br><br></p>';
+    console.log('Numero del participante: ' + index_part);
+    console.log('Condicion MCQ: ' + condicion);
+    console.log('Condicion interferencia: ' + condicion_inter);
+    console.log('Versión: ' + version);
+  }
+  
+  //variables para guardar datos de control de pantalla y navegador
+  var dimx = screen.width
+  var dimy = screen.height
+  var color_profundidad = screen.colorDepth
+  var pixel_profundidad = screen.pixelDepth
+  var sBrowser, sUsrAg = navigator.userAgent;
+  if(sUsrAg.indexOf("Chrome") > -1) {
+      sBrowser = "Google Chrome";
+  } else if (sUsrAg.indexOf("Safari") > -1) {
+      sBrowser = "Apple Safari";
+  } else if (sUsrAg.indexOf("Opera") > -1) {
+      sBrowser = "Opera";
+  } else if (sUsrAg.indexOf("Firefox") > -1) {
+      sBrowser = "Mozilla Firefox";
+  } else if (sUsrAg.indexOf("MSIE") > -1) {
+      sBrowser = "Microsoft Internet Explorer";
+  } else {
+      sBrowser = "No identificado"
+  }
+
+  var bienvenida = {
+    type: "html-button-response",
+    stimulus: inst_bienvenida,
+    choices: ['Acepto'],
+    prompt: cond_prompt,
+    data: {
+      condicion_MCQ: condicion, 
+      condicion_INTER: condicion_inter, 
+      numero_participante: index_part, 
+      numero_version: version,
+      dimx : dimx,
+      dimy : dimy,
+      color_profundidad : color_profundidad,
+      pixel_profundidad : pixel_profundidad,
+      Browser : sBrowser
+    }
+  };
+  var timeline = [bienvenida];
+
+  // definir variables para pantalla completa
+  var fullscreen_trial = {
+    type: 'fullscreen',
+    fullscreen_mode: true
+  };
+
+  var fullscreen_trial_exit = {
+    type: 'fullscreen',
+    fullscreen_mode: false
+  };
+  timeline.push(fullscreen_trial);
+  
+  // Encuesta demografica
+  ///////////////////////////////////////////////////////////////////////////////////////
+  var demo_survey = {
+    type: 'survey-text',
+    questions: [
+      {prompt: 'Nombres', placeholder: 'Pedro Pablo', columns: 40,  
+      required: true, name: 'Nombres'},
+      {prompt: 'Apellidos', placeholder: 'Perez Pereira', columns: 40,
+      required: true, name: 'Apellidos'},
+      {prompt: 'Edad', columns: 3, required: true, name: 'Edad'},
+      {prompt: 'Sexo', placeholder: 'mujer/hombre', columns: 12,
+      required: true, name: 'Sexo'},
+      {prompt: 'Curso', placeholder: 'Septimo B', columns: 12,
+      required: true, name: 'Curso'},
+      {prompt: 'Colegio', placeholder: 'Senda del Saber', columns: 30,
+      required: true, name: 'Colegio'},
+      {prompt: 'Contacto', placeholder: 'Pedro.pablo@gmail.com', columns: 30,
+      required: true, name: 'Contacto'}
+    ],
+    randomize_question_order: false,
+    preamble: preamble_demo,
+    postamble: postamble_demo
+  };
+  timeline.push(demo_survey);   
+
+  if (modo_online) {
+    // Precarga de imagenes
+    var preload = {
+      type: 'preload',
+      images: todas_imagenes
+    }
+    timeline.push(preload);
+  }
+  
+  // Intrucciones MCQ
+  ///////////////////////////////////////////////////////////////////////////////////////
+  
+  var instrucciones_1 = {
+    type: "html-button-response",
+    stimulus: inst_MCQ,
+    choices: ['Comenzar'],
+    prompt: "<br>"
+  };
+  timeline.push(instrucciones_1);
+
+  // Seccion MCQ:
+  ///////////////////////////////////////////////////////////////////////////////////////
+  var MCQ_data = MCQ_data_condition(condicion);
+  var timeline_MCQ = [];
+  var random_index = jsPsych.randomization.repeat([...Array(30).keys()], 1);
+  // agregar los 30 trials al timeline y sus respectivas escalas likert al timeline
+  for (i = 0; i < 30; i++) {
+    // Agregar item MCQ
+    timeline_MCQ.push({
+      type: 'survey-multi-choice',
+      questions: [MCQ_data[random_index[i]].questions[0]]
+    });
+    
+    // Agregar su escala likert
+    timeline_MCQ.push({
+      type: 'survey-likert',
+      questions:
+        [{prompt: pregunta_seguridad,
+          name: (MCQ_data[random_index[i]].questions[0].name) + ' likert',
+          labels: scale,
+          required: true}]
+    });
+  };
+  // nodo 
+  var node_MCQ = {
+    timeline: timeline_MCQ    
+  };
+  timeline.push(node_MCQ)
+  
+  // Agradecimiento MCQ
+  ///////////////////////////////////////////////////////////////////////////////////////
+  var gracias_MCQ = {
+    type: "html-button-response",
+    stimulus: '<p style="font-size: 120%">Gracias por completar esta etapa del estudio. Ahora te invitamos a responder el cuestionario.<br><br></p>',
+    choices: ['Continuar'],
+    prompt: "<br>",
+    on_start: function() {
+      var data = jsPsych.data.get();
+      var d = new Date();
+      saveData("data_MCQ_user_"+id_user+"_num_"+index_part+"_min_"+ d.getMinutes()+"_seg_"+d.getSeconds(), data.json());
+    }
+  };
+  timeline.push(gracias_MCQ);
+
+  // Intrucciones cuestionario
+  ///////////////////////////////////////////////////////////////////////////////////////
+  var instrucciones_2 = {
+    type: "html-button-response",
+    stimulus: instrucciones_Metas,
+    choices: ['Comenzar'],
+    prompt: "<br>"
+  };
+  timeline.push(instrucciones_2);
+  
+  // Cuestionario Metas académicas
+  ///////////////////////////////////////////////////////////////////////////////////////
+  
+  var METAS_data = METAS_data_return();
+
+  var cuest_estudio = {
+    type: 'survey-likert',
+    questions: METAS_data
+  };
+  timeline.push(cuest_estudio)
+
+  // Agradecimiento cuestionario
+  ///////////////////////////////////////////////////////////////////////////////////////
+  
+  var gracias_cuest = {
+    type: "html-button-response",
+    stimulus: '<p style="font-size: 120%">Gracias por responder el cuestionario. Ahora te invitamos a seguir con el juego, que es muy breve.<br><br></p>',
+    choices: ['Continuar'],
+    prompt: "<br>",
+    on_start: function() {
+      var data = jsPsych.data.get();
+      var d = new Date();
+      saveData("data_METAS_user_"+id_user+"_num_"+index_part+"_min_"+ d.getMinutes()+"_seg_"+d.getSeconds(), data.json());
+    }
+  };
+  timeline.push(gracias_cuest);
+  
+  // Intrucciones juego
+  ///////////////////////////////////////////////////////////////////////////////////////
+  var instrucciones_3 = {
+    type: "html-button-response",
+    stimulus: inst_JUEGO,
+    choices: ['Comenzar'],
+    prompt: "<br>"
+  };
+  timeline.push(instrucciones_3);
+  
+  // JUEGO 
+  ///////////////////////////////////////////////////////////////////////////////////////
+  var timeline_JUEGO_IMAGES = [];
+
+  // variables para los enunciados
+  var random_index_juego = jsPsych.randomization.repeat([...Array(15).keys()], 1);
+  // Agregar item JUEGO IMAGES 
+  for (i = 0; i < 15; i++) {
+    // Agregar item de juego
+    timeline_JUEGO_IMAGES.push(juego_data_condition(random_index_juego[i]+1, condicion));    
+  };
+  // nodo 
+  var nodo_JUEGO_IMAGES = {
+    timeline: timeline_JUEGO_IMAGES
+  };
+ 
+  timeline.push(nodo_JUEGO_IMAGES)
+
+  // Intrucciones interferencia
+  ///////////////////////////////////////////////////////////////////////////////////////
+  var instrucciones_4 = {
+    type: "html-button-response",
+    stimulus: inst_INTER,
+    choices: ['Comenzar'],
+    prompt: "<br>",
+    on_start: function() {
+      var data = jsPsych.data.get();
+      var d = new Date();
+      saveData("data_JUEGO_user_"+id_user+"_num_"+index_part+"_min_"+ d.getMinutes()+"_seg_"+d.getSeconds(), data.json());
+    }
+  };
+  timeline.push(instrucciones_4);
+
+  
+  // Estimulos interferencia
+  ///////////////////////////////////////////////////////////////////////////////////////
+  var stimulus_inter = {
+    type: 'animation',
+    stimuli: ['imagen_juego_interferencia.jpg'],
+    sequence_reps: 2*20,
+    frame_time: 500,
+    prompt: '',
+    render_on_canvas: true
+  };
+  timeline.push(stimulus_inter);
+
+  // Sección interferencia
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //var timeline_INTER = [];
+  //for (cond_inter = 0; cond_inter < 24; cond_inter++){
+  //  var INTER_data = INTER_data_condition(cond_inter);
+  //  //var random_index_inter = jsPsych.randomization.repeat([...Array(4).keys()], 1);
+  //  // agregar los 4 trials al timeline
+  //  for (item_index = 0; item_index < 4; item_index++) {
+  //    // Agregar item MCQ
+  //    timeline_INTER.push({
+  //      type: 'survey-multi-choice-cuest',
+  //      questions: [INTER_data[item_index].questions[0]]  
+  //    });    
+  //  };
+  //};
+  
+  var timeline_INTER = [];
+  var INTER_data = INTER_data_condition(condicion_inter-1);
+  var random_index_inter = jsPsych.randomization.repeat([...Array(4).keys()], 1);
+  // agregar los 4 trials al timeline
+  for (i = 0; i < 4; i++) {
+    // Agregar item MCQ
+    timeline_INTER.push({
+      type: 'survey-multi-choice-cuest',
+      questions: [INTER_data[random_index_inter[i]].questions[0]]  
+    });    
+  };
+  
+  // nodo 
+  var node_INTER = {
+    timeline: timeline_INTER
+  };
+  timeline.push(node_INTER)
+  
+  // Agradecimiento juego y final
+  ///////////////////////////////////////////////////////////////////////////////////////
+  // Encuesta demografica
+  ///////////////////////////////////////////////////////////////////////////////////////
+  var demo_numero = {
+    type: 'survey-text',
+    questions: [
+      {prompt: 'Número de teléfono:', placeholder: '+56 9 xxxx xxxx', columns: 15,
+      required: false, name: 'Telefono'}
+    ],
+    randomize_question_order: false,
+    preamble: preamble_final,
+    postamble: postamble_final,
+    on_start: function() {
+      var data = jsPsych.data.get();
+      var d = new Date();
+      saveData("data_INTER_user_"+id_user+"_num_"+index_part+"_min_"+ d.getMinutes()+"_seg_"+d.getSeconds(), data.json());
+    },
+    on_finish: function() {
+      // rescatar número de telefono
+      var data = jsPsych.data.get();
+      var d = new Date();
+      saveData("data_FONO_user_"+id_user+"_num_"+index_part+"_min_"+ d.getMinutes()+"_seg_"+d.getSeconds(), data.json());
+      // despedirse
+      jsPsych.endExperiment('<p style="font-size: 120%;">Agradecemos mucho tu participación, el estudio ha terminado.</p>' +
+      '<p style="font-size: 120%;">Puedes cerrar esta ventana si quieres.</p>');
+    }
+  };
+  timeline.push(fullscreen_trial_exit)
+  timeline.push(demo_numero);   
+
+  return timeline 
+}      
+
+// inicializar experimento
+// Modo de presentación
+var modo_online = true;
+var randomizar = true;
+
+if (modo_online) {
+  uptadeDataBase();
+} else {
+  // Inicializar los estimulos del experimento y el experimento
+  var timeline = data_experimento(1, 1);
+  jsPsych.init({timeline: timeline}); 
+}
+
+</script>
+</html>

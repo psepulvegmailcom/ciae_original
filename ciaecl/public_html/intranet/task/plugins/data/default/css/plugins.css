@@ -1,0 +1,19 @@
+.plugins_default {
+	font-family: verdana;
+	font-size: 12px;
+}
+
+.plugins_td {
+	font-weight: bold;
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 1px 0px 1px 0px;
+	padding: 5px;
+}
+
+.plugins_text {
+	border-color: #e3e3e3;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	padding: 5px;
+}

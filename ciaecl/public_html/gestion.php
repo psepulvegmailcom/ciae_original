@@ -1,0 +1,1 @@
+<meta HTTP-EQUIV="REFRESH" content="0; url=http://ec2-18-224-18-38.us-east-2.compute.amazonaws.com/">

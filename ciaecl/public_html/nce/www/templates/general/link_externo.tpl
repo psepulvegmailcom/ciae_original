@@ -1,0 +1,1 @@
+<img src="www/images/iconos/32x32/Target_blank.png" class="open_target_blank">

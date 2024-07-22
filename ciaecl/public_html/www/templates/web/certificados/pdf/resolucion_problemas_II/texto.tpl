@@ -1,0 +1,3 @@
+Se certifica por medio  del presente que <b>{nombre} {apellidos}</b> particip&oacute; en el Seminario para Futuros Profesores "La Resoluci&oacute;n de Problemas y la Matem&aacute;tica Escolar" dictado por los profesores Valeria Randolph, Flavio Gui&ntilde;ez y Valentina Giaconi, los d&iacute;as 16 y 17 de diciembre de 2013. 
+
+<!-- INCLUDE BLOCK : www/templates/web/certificados/bases/base_cierre.tpl --> 

@@ -1,0 +1,29 @@
+ 
+a:link, a:visited , a:active{
+	color: #4F6D73;
+	text-decoration: none;
+	font-size:11px;
+} 
+a:hover {
+	text-decoration: underline  ;
+	
+	color:   #333333;
+}
+  
+.piepagina {
+	font-size: 7px; 
+	color: #666666;
+	text-transform:uppercase;
+	font-style: normal;
+	font-weight: lighter;
+	text-align: center;
+	} 
+	
+	.intercalado1 {
+background: #EFEFEF ;
+padding: 5px;
+}
+.intercalado2 {
+background:#ffffff;
+padding: 5px;
+}

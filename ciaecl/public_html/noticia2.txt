@@ -1,0 +1,7 @@
+﻿&noticia1=Los primeros resultados de este estudio se presentarán en el II Coloquio de Lenguaje y Cognición, de Universidad de Concepción
+&noticia2=Este miércoles el Gobierno dio a conocer con optimismo los resultados del SIMCE 2010
+&noticia3=SIMCE: Los desafíos para mejorar la calidad y equidad educativa continúan presentes
+&noticia4=Primer congreso interdisciplinario de investigación.
+&noticia5=Destacados conferencistas participaron en CIIE.
+&noticia6=Ad portas del Bicentenario, la innovación continúa siendo un eje central de la política de Textos Escolares.
+&total=4&estado=listo&

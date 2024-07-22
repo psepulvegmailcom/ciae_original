@@ -1,0 +1,1 @@
+<small>Para su inscripci&oacute;n, le recomendamos utilizar un correo electr&oacute;nico personal, ya que la confirmaci&oacute;n de su asistencia le llegar&aacute; a ese correo. El registro de cada persona se identifica por un correo electr&oacute;nico &uacute;nico y personal. Evite utilizar el mismo correo electr&oacute;nico para inscribir a varias personas.</small>

@@ -1,0 +1,62 @@
+/* Styles related to the PHP Layers Menu System begin here */
+
+.phplmnormal	{	
+	font-size: 10pt;
+	color: #000000;
+}
+
+a.phplm:link	{	
+	font-size: 9pt;
+	color: #2C3F98;	
+}
+
+a.phplm:visited	{	
+	color: #726461;
+}
+
+a.phplm:hover	{	
+	/*color: #841212;*/
+	font-weight: bold;
+	background-color: #E1E6F7;
+}
+
+a.phplm:active	{	
+	color: #ff0000;
+}
+
+.phplmbodytable	{
+	font-family: Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #fffae4;
+}
+
+.ivorybodytable	{
+	font-family: Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #fffff8;
+}
+
+.darkbordertable	{
+	background-color: #726461;
+}
+
+.blackbordertable	{
+	background-color: #000000;
+}
+
+.greenbordertable	{
+	background-color: #839983;
+}
+
+.darkgreenbordertable	{
+	background-color: #839983;
+}
+
+.redbordertable	{
+	background-color: #aa5859;
+}
+
+.orangebordertable	{
+	background-color: #df9500;
+}
+

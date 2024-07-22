@@ -1,0 +1,1 @@
+<meta HTTP-EQUIV="REFRESH" content="0; url=http://www.ciae.uchile.cl/index.php?langSite=es&page=view_inscripcion_2019_08_seminario_aprendizaje_colaborativo">

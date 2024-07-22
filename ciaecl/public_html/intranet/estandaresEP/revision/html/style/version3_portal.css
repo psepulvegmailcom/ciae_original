@@ -1,0 +1,300 @@
+ /*  
+Theme Name: Sidweb 2.0
+Theme URI: http://www.sidwod.com
+Description:  Sidweb 2.0 Theme
+Version: 0.1
+Author: Sidwod Ltda.
+Author URI: http://www.sidwod.com
+*/
+/* -----------------  page styles -------------------------------------------------------*/
+ /* clear all default CSS */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th { font-size: 12px; font-weight: normal; font-style: normal; }
+ul,ol { list-style: none; } 
+em {font-size:100%; font-style:oblique;}
+fieldset,img { border: none;background: transparent; }
+caption,th { text-align: left; }
+table { border-collapse: collapse; border-spacing: 0; }
+td { border-bottom:1px solid #666666; background-color:#FFFFFF; padding: 2px 4px 2px 4px;	}
+/* LAYOUT */
+.clear { clear:both; }
+.clearer { clear: both; display: block; margin: 0; padding: 0; height: 0; line-height: 1px; font-size: 1px; }
+ 
+a { color:#0088b5; text-decoration:underline; }
+a:hover { color:#8ab54a; text-decoration:none; }
+a:visited { color:#0088b5; text-decoration:underline; }
+
+ 
+  
+
+a small {font-size:12px;}
+
+* { margin: 0; padding: 0; outline: none; }
+
+html{
+	padding:0px;
+	margin:0px;
+	min-width: 939px;
+	height:100% !important;
+}
+
+table{width: 70%;}
+strong { font-weight:bold;}
+
+body{ padding:0; margin:0; font-size:11px;	font-family: Verdana, Arial, Helvetica, sans-serif; line-height: 17px; background:#f4f4f4 url(../images/bodybg.gif) center repeat-y; color: #555; 
+ voice-family: "\"}\"";
+ voice-family: inherit; text-align:center;
+} html>body { font-size: 11px; }
+small {font-size:10px;}
+
+#wrapper { margin:0px auto !important; width:939px;  padding:0;  background:#ECF0F3 url(../images/banda_menu/linea_blue2.png) center top repeat-x;border-right:1px solid #c5c5c5;border-left:1px solid #c5c5c5;text-align: left;}
+
+/* -----------------  general styles  -------------------------------------------------------*/
+
+p { margin:0;padding-top:2px;  }
+h2 { font-weight:bold; font-size:13px; padding:0px 0 4px 0px; margin: 5px 0 2px 0; color: #444; background:none; border-bottom: 2px dotted #444; }
+h3 { font-weight:bold; font-size:12px; padding:0px 0 4px 2px; margin: 5px 0 2px 2px; color:#444; background:none;   }
+ul { margin: 0; padding : 0; list-style : none; }
+h4 {font: 20px 'HelveticaNeue-CondensedBold', 'Arial Narrow', Helvetica, Arial, sans-serif; margin:0;}
+.pic{margin-top:8px;}
+img { border: 0;}
+
+
+#mainAreaInternal h2 , .FrameTitle{
+	font-size:22px;
+	font-weight:normal;
+	font-family:Tahoma, Arial, Verdana;
+	color:#13058B;
+	padding:3px 0 3px 0;
+	margin:10px 0 10px 0;
+	border-bottom:1px dotted #509597;
+}
+
+/* -----------------  top info  -------------------------------------------------------*/
+#header { clear:both; width:939px; height:85px;  margin:0; background-color:#282986;   color:#FFFFFF }
+
+#title {float:left; width:620px; padding: 10px 0 10px 10px;position:absolute;}
+#title img{ margin:-14px 10px 0 0;}
+#title h3 {font-size:18px; line-height:20px; padding:5px 0 0 10px; color: #fff;font-weight:bold;}
+#title p {font-size: 10px; color: #808080; padding: 0; background: inherit;}
+
+#hright {float:right; width:540px; height: 60px; margin:15px 0 0 0;}
+#hrighttop {width: 200px;margin: 0 2px 0 0; padding: 0 8px 2px 0; float:right; text-align: right;}
+
+#menu { width: 540px; float:right; margin:2px 0 0 0; padding:0; text-align:right;}
+#menu li { display:inline; }
+#menu li a {  color:#444; text-decoration:none; padding:1px 10px 1px 10px;height:19px; background:none;}
+#menu li a:hover { background: none;color:#631e19;} 
+
+/* ----------------- Main content -------------------------------------------------------*/
+.message{ position:absolute;  width:360px; float:left; margin:70px 0px 0px 165px; color:#fff;}
+
+#bottomcontenttop{width:939px;height:50px;background-color:#282986;   color:#FFFFFF  }
+#bottomcontent{width:939px;margin:0px;padding:0px;background: url(../images/bodybg.gif) repeat-x top;}
+#content_header{height:22px !important;;background:#CDDF8B;margin-top:17px; text-align:right;background:url(../images/barra_ver/linea2.gif) repeat-x top;}
+
+#content_header_os{height:22px !important;;background:#CDDF8B;margin-top:17px; text-align:right;background:url(../images/barra_ver/fondo_ver_os.gif) repeat-x top;}
+
+.left {float: left;width:190px;margin: 0 0px 5px 12px; padding:0px;background:#fff;}
+.right {float: right;width: 700px;margin: 0 10px 5px 0; padding-top:10px;background:#fff } 
+
+.middle {float: right;width: 270px;margin: 0 6px 5px 0; padding:10px;background:#fff;}
+
+.complete {float: left;width: 98%;margin: 0 0px 5px 0; padding:10px;background:#fff url(../images/banda_menu/barra_ver_3.jpeg) repeat-x top;}
+
+
+.imagen_presentacion{
+float:left;
+padding: 55px 10px 350px 10px;
+
+}
+#user_info {
+	float:absolute;
+	float: right;
+	padding: 1px 18px 0px 0px;
+	text-align:right;
+	right:0px;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.thumbs img{position:relative;padding:1px;margin:5px 8px 5px 9px;border:2px solid #631e19;background:none;}
+.thumbs img:hover{border:2px solid #c5c5c5; background:none;}
+
+
+#sidebar h2 {font-weight:bold; font-size:13px;text-align:left; line-height:14px;padding:5px 0px 20px 15px;border:none; margin:0px; color:#13058B; background:url(../images/banda_menu/menu.gif) repeat-x top; } 
+#sidebar div{ background:url(../images/banda_menu/11.jpg) repeat-x top; color:#3787DC;}
+#sidebar div.login{ background:url(../images/login.gif) repeat-x top;}
+
+#sidebar a:link,#sidebar a:visited{font-size:11px;color:#91999C;font-weight:bold; background:url(../images/banda_menu/8b.jpg) top left;width:170px;height:auto;padding:0 0 0 15px;display:block; text-decoration:none;}
+/*#sidebar div a:hover{background:url(../images/banda_menu/4b.jpg); }*/
+#sidebar  a:hover{background:none; }
+
+#sidebar a.faq:link,#sidebar a.faq:visited{font-size:10px;color:#91999C;font-weight:bold; background:url(../images/banda_menu/8big.jpeg) top left;width:160px;height:auto;padding:0 0 0 28px;display:block; text-decoration:none;}
+#sidebar  a.faq:hover{background:none; }
+
+
+#sidebar a.faq_single:link,#sidebar a.faq_single:visited{font-size:10px; width:190px;color:#91999C;font-weight:bold;   padding:0 0 0 2px;  text-decoration:none; background:url(../images/banda_menu/8b_sinflecha.jpg) top left;}
+#sidebar  a.faq_single:hover{ text-decoration:underline; }
+
+#sidebar a.link_asistencia:link,#sidebar  a.link_asistencia:visited,#sidebar  a.link_asistencia:hover{
+width:180px; background: #FFFFFF; text-align:center; padding:5px; height:70px;
+}
+
+
+#sidebar .bloque{ padding:10px;}
+/*#sidebar a.simple{ background:none;text-decoration:underline;}*/
+/* ----------------- Bottom content -------------------------------------------------------*/
+.clear { clear: both;}
+#footer { height: 40px;bottom: 0;text-align:center;color: #444;  padding: 4px 0; margin:10px 0 0 0;}
+#footer a{color: #631e19;background:none;}
+#footer li{ display: inline;padding-right: 20px;}
+
+#mainAreaInternal{
+	line-height: 1.7em;
+	padding: 0 15px 15px 15px;
+	text-align: justify;
+	color: #3A3535;
+	font-size : 11px;
+	min-height:400px;
+	width: 670px; 
+	font-family: Verdana, "times new roman", georgia, times,  serif;
+	 /* background: url(../images/marcarAgua22.png)  repeat   ;*/
+}
+
+/*table, td , tr{ background:none}*/
+
+#mainAreaInternal ul,  { list-style:square;padding-left: 20px; }
+
+#mainAreaInternal ol { list-style:decimal; padding-left: 20px; }
+
+
+
+.footer, .push {
+	height: 4em; /* .push must be the same height as .footer */
+}
+
+
+/* Navegacion
+----------------------------------------------------------------------------------------------------*/
+#mainNav li{
+	width:50px;
+	height:22px;
+	list-style:none;
+	float:right;
+	background-color:#CDDF8B;
+	background-image: url(../images/barra_ver/flecha2.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	*font-size:medium;
+	*font:medium;
+	font:12px arial,helvetica,clean,sans-serif;
+	
+}
+
+	
+#mainNav li.current{
+	background-color:#ADD638;
+	background-image: url(../images/barra_ver/fecha1.gif);
+}
+
+#mainNav li.lastDone{
+	background-color:#CDDF8B;
+	background-image: url(../images/barra_ver/flecha3.gif);
+}
+
+#mainNav li.done{
+	background-color:#ADD638;
+	background-image: url(../images/barra_ver/fecha1.gif);
+}
+
+#mainNav li.mainNavNoBg{
+	/*background-image:none;*/
+	background-color:#CDDF8B;
+	background-image: url(../images/barra_ver/flecha2.gif);
+}
+
+
+
+#mainNav li a, #mainNav li a:link, #mainNav li a:visited, #mainNav li a:hover, #mainNav li a:active {
+	color:#688324;
+}
+
+#mainNav li.lastDone a, #mainNav li.lastDone a:link, #mainNav li.lastDone a:visited, #mainNav li.lastDone a:hover, #mainNav li.lastDone a:active{
+color:#688324;
+}
+
+#mainNav li.current a, #mainNav li.current a:link, #mainNav li.current a:visited, #mainNav li.current a:hover, #mainNav li.current a:active, #mainNav li.done a, #mainNav li.done a:link, #mainNav li.done a:visited, #mainNav li.done a:hover, #mainNav li.done a:active {
+	color:#fff;
+}
+
+#mainNav li.done a:hover, #mainNav li.lastDone a:hover  {
+	color:#FFFF99;
+	cursor:hand;
+}
+
+#mainNav li a em{
+	width:20px;
+	display:block;
+	margin:2px 20px 0 10px;
+	font-style:normal;
+	font-weight:bold;
+}
+
+#mainNav li a span{
+	width:50px;
+	display:block;
+	margin-left:10px;
+	font-weight:normal;
+}
+
+
+#mainNav li a{
+	height:30px;
+	display:block;
+}
+
+.revision_fila {
+
+	border-bottom: 1px dotted #333333; 
+	vertical-align:middle; 
+	min-height:35px; 
+	padding: 5px 0 5px 0px;
+	font-size:11px;
+}
+
+ 	.lista_principal  { list-style: url(../images/banda_menu/lista_verde.png) circle; margin-left:30px;}
+	.lista_secundaria   { list-style: url(../images/banda_menu/lista_azul.png) circle; margin-left:50px;}
+	
+	.edicion_enrevision { height:auto;padding:8px 5px 8px 5px;   font-size:13px; color:#CC0000; font-weight:bold;}
+	.edicion_enrevision_interna { width:70%; height:auto;padding:8px 5px 8px 5px;   font-size:12px; color:#CC0000; padding:5px 0 5px 30px;}
+
+.evaluacion_semaforo_0 { background: url(../images/iconos/semaforo_rojo.png) center  no-repeat; background-color:#FFFFFF; padding:1px;    text-align:center; font-weight:bold;  width:25px; height:25px;}
+.evaluacion_semaforo_1 {background: url(../images/iconos/semaforo_naranjo.png) center  no-repeat;  background-color:#FFFFFF;   text-align:center; font-weight:bold;  width:25px; height:25px;}
+.evaluacion_semaforo_2 { background: url(../images/iconos/semaforo_amarillo.png) center  no-repeat;   background-color:#FFFFFF;  text-align:center; font-weight:bold;  width:25px; height:25px;}
+.evaluacion_semaforo_3 {background: url(../images/iconos/semaforo_verde.png) center  no-repeat;    background-color:#FFFFFF; text-align:center; font-weight:bold;  width:25px; height:25px;}
+.evaluacion_semaforo_4 {background: url(../images/iconos/semaforo_blanco.png) center  no-repeat;   background-color:#FFFFFF;  text-align:center; font-weight:bold;  width:25px; height:25px; border-bottom:none;}
+ 
+.evaluacion_semaforo_0fondo_oscuro { background: url(../images/iconos/semaforo_rojo.png) center  no-repeat; background-color:#E5E5E5; padding:1px;    text-align:center; font-weight:bold;  width:25px; height:25px;}
+.evaluacion_semaforo_1fondo_oscuro {background: url(../images/iconos/semaforo_naranjo.png) center  no-repeat;  background-color:#E5E5E5;   text-align:center; font-weight:bold;  width:25px; height:25px;}
+.evaluacion_semaforo_2fondo_oscuro { background: url(../images/iconos/semaforo_amarillo.png) center  no-repeat;   background-color:#E5E5E5;  text-align:center; font-weight:bold;  width:25px; height:25px;}
+.evaluacion_semaforo_3fondo_oscuro {background: url(../images/iconos/semaforo_verde.png) center  no-repeat;    background-color:#E5E5E5; text-align:center; font-weight:bold;  width:25px; height:25px;}
+.evaluacion_semaforo_4fondo_oscuro {background: url(../images/iconos/semaforo_blanco.png) center  no-repeat;   background-color:#E5E5E5;  text-align:center; font-weight:bold;  width:25px; height:25px; border-bottom:none;}
+
+/* clases de rubricas */
+.letra_rojo {/*color:#F10C0C;*/ font-weight:bold; vertical-align: top; border : 2px solid #F10C0C; }
+.letra_morado {/*color:#9E58Ea;*/ font-weight:bold;   vertical-align: top; border : 2px solid #9E58Ea; }
+.letra_celeste {/*color:#4893F4; */font-weight:bold; vertical-align: top; border : 2px solid #4893F4;}
+.letra_verde {/*color:#009900;*/ font-weight:bold; vertical-align: top; border : 2px solid #009900;}
+.letra_amarillo {/*color:#F4D732;*/   font-weight:bold; vertical-align: top; border : 2px solid #F4D732;}
+.letra_simple {/*color:#F4D732;*/   font-weight:bold; vertical-align: top; border: #333333 1px solid ;  }
+.letra_simple_claro { padding:8px;    font-weight:bold; vertical-align: top; border: #333333 1px solid ; background:#FFFFFF; }
+.letra_simple_oscuro { padding:8px;   font-weight:bold; vertical-align: top; border: #333333 1px solid ; background: #ECF0F3 }
+.tabla_comentarios_internos {margin-left:20px; margin-bottom:10px;width:90%; border:1px solid #333333}
+..tabla_comentarios_internos th {background: #E8E8E8; border-bottom:1px solid #333333}
+.barra_destacado { font-weight:bold;  font-size:130%;  }
+
+p,li{font-size:13px}
+.barra_superior {text-align:right; margin:8px 0 8px 0; padding:10px 5px 10px 0px;border-bottom:#333333 1px dotted;  border-top:#333333 1px dotted;  }
+.menu_selected { background:none;}
+.textarea_niveles {height:120px; width:98%;    border: 1px solid #333333;  }

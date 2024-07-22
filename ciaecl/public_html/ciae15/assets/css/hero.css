@@ -1,0 +1,14 @@
+#inicio {
+    background-image: url('../img/fondo_banner_hero.png');
+    position: relative;
+    padding-top: 280px;
+    padding-bottom: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.video-link img {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

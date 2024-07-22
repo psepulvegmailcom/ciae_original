@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+#head {
+	position:absolute;
+	margin-left:-490px;
+	left:50%;
+	top:0;
+	width:980px;
+	min-width:980px;
+	height:56px;
+	z-index:5;
+	background-image: url(../images/margen_bot.gif);
+	}
+
+* html #head {
+	width:980px;
+	height:56px;
+	}
+	
+#botonera {
+	font-family:"Trebuchet MS";
+	color: #384558;
+	font-size:11px;
+	text-align:center;
+	height: 27px;
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	width:954px;
+}
+#botonera .t-tabs {
+	/*clear: both;*/
+	/*clear: none;
+	height: 100%;*/
+	/*position:relative;*/
+	min-height: 27px;
+}
+#botonera .t-tabs ul.tabs {
+	margin: 0;
+	padding: 0;
+}
+#botonera .t-tabs ul.tabs li {
+	display: inline;
+	float: left;
+	height: 27px;
+	background-image:url(../images/botonera/linea.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 10px;
+	margin: 0;
+	width: 126px;
+}
+#botonera .t-tabs ul.tabs li a {
+	display: block;
+	float: left;
+	color:#fff;
+	text-decoration: none;
+	padding-top: 8px;
+	padding-right: 7px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	width: 156px;
+}
+#botonera .t-tabs ul.tabs li a:hover {
+	background-image:url(../images/botonera/linea.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	color:#fff;
+	text-decoration: none;
+	font-weight:bold;
+	text-decoration:underline;
+	width: 156px;
+}
+#iconos{
+	position: absolute;
+	top: 1px; 
+	padding-right: 15px;
+	font-family: "Trebuchet MS";
+	font-size: 10px;
+	color: #CCCCCC;
+	width: 300px;
+	right: 4px;  
+	padding-bottom:10px;
+	}
+#iconos p {
+	margin: 0px; 
+	display: inline;
+	position: absolute;
+	top: 8px;
+	width: 350px;
+	height: 14px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+}
+#botonera .nombre {
+	/*clear: both;*/
+	/*clear: none;
+	height: 100%;*/
+	/*position:relative;*/
+	min-height: 27px;
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	width: 500px;
+	height: 10px;
+}
+#botonera p {
+	margin: 0px;
+	display: inline;
+	position: absolute;
+	top: 10px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+}
+
+
+/* MENU DE HERRAMIENTAS */
+.botonera_herramientas_pricipal {
+font-weight:bold;
+}
+.botonera_herramientas_secundario {
+font-weight: normal;
+}
+
+.div_visible {
+visibility:visible;
+height:inherit}
+
+.div_invisible { visibility:hidden; height:0px}

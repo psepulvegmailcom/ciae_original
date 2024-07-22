@@ -1,0 +1,3 @@
+Estimado(a) {nombre_usuario}
+<br  />Le informamos que los datos proporcionados por usted al {nombre_sitio} han sido recepcionados exitosamente. <br  />A partir de este momento {fecha_completa}, y durante los próximos 10 días, sus datos serán revisados por nuestro equipo de Administración e Información de Contenidos.<br /><br />Por este mismo medio le notificaremos el resultado de su postulación en las etapas de verificación y validación de sus datos.
+ 

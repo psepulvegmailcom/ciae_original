@@ -1,0 +1,1 @@
+<div style="text-align: center;"><table style="width: 900px;" border="0">  <tbody>    <tr>      <td><img  src="http://www.ciie2012.cl/www/imag/carta_header.png" alt=""></td>    </tr>	 <tr>      <td style="padding-left: 30px;">

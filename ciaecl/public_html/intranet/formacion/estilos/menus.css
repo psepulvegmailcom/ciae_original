@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+#lateral {
+	width: 205px;
+	float: left;
+	background-repeat: repeat-y;
+	padding-bottom: 3px;
+	padding-top: 250px;
+	background-image: url(../images/llinea_vertical.gif);
+	background-position: 204px -175px;
+	padding-right: 5px;
+	text-align: center;
+	font-family: "Trebuchet MS";
+	font-size: 11px;
+	height: 150px;
+	vertical-align: bottom;
+}
+
+#lateral ul {
+	margin: 0px;
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0px;
+}
+#lateral li {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	list-style-type: none;
+	padding-left: 25px;
+	background-image: url(../images/separa_lateral.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top: 5px;
+	list-style-type: none;
+	text-align: left;
+}
+#lateral a {
+	color: #676767;
+	text-decoration: none;
+}
+#lateral a:hover {
+	color: #95CB32;
+	text-decoration: underline;
+}
+
+/* submenus */
+#lateral .submenu {
+	width: 195px;
+}
+#lateral .submenu h3 {
+	font-size: 10px;
+	margin: 0px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#lateral .submenu ul {
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 17px;
+}
+#lateral .submenu li {
+	background-image: url(../images/flecha_ubica2.gif);
+	background-repeat: no-repeat;
+	list-style-image: none;
+	list-style-type: none;
+	background-position: 8px 10px;
+	padding-left: 20px;
+	padding-bottom: 0px;
+	color: #6D8A96;
+}
+#lateral .submenu li.sinlink {
+	list-style-image: none;
+	list-style-type: none;
+	background-position: 8px 10px;
+	padding-left: 20px;
+	padding-bottom: 0px;
+	color: #6D8A96;
+	background-image: url(../images/1x1.gif);
+	background-repeat: no-repeat;
+	text-decoration: underline;
+}
+#lateral .submenu a {
+	color: #6D8A96;
+	text-decoration: none;
+	font-size: 11px;
+}
+#lateral .submenu a:hover {
+	color: #676767;
+	text-decoration: underline;
+	font-size: 11px;
+}

@@ -1,0 +1,1 @@
+ alert('Se le enviar\u00E1 un c\u00F3digo de validaci\u00F3n a su email que debe ingresar para validar su inscripci\u00F3n. Si no recibe el c\u00F3digo revise la bandeja SPAM de su correo o que haya escrito correctamente su email');

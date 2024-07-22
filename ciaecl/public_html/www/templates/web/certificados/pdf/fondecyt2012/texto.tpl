@@ -1,0 +1,3 @@
+Se certifica que <b>{nombre}</b> ha contribuido en forma importante al desarrollo de la primera fase del Proyecto Fondecyt Nº 1120740: "El Tr&aacute;nsito de la Formaci&oacute;n Inicial Docente al ejercicio Profesional: La Interacci&oacute;n entre Capacidades y Contextos", mediante su participaci&oacute;n en dos encuestas realizadas en el marco del proyecto.
+
+<!-- INCLUDE BLOCK : www/templates/web/certificados/bases/base_cierre.tpl --> 

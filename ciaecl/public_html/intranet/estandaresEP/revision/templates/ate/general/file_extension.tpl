@@ -1,0 +1,1 @@
+pdf, doc, docx, zip, jpg, gif, png, jpeg, rar

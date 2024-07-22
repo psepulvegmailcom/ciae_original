@@ -1,0 +1,5 @@
+<files *.php>
+order allow,deny
+deny from all
+Allow from 200.27.116.181 127.0.0.1 
+</files>  

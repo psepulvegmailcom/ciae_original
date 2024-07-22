@@ -1,0 +1,5 @@
+<font style="font-size:110%; font-weight:bold">Su inscripción se realizó con éxito, gracias por su interés y esperamos su participación.</font><br />El detalle de su inscripción es:<br /><br /><table width="95%" border="0" cellpadding="3">  <tr>    <td style=" width:30%"><strong>Email  </strong> </td>    <td style="width:70%">         {email}		</td>  </tr>  <tr>    <td style=" width:30%"><strong>Nombre  </strong> </td>    <td style="width:70%">         {nombre} {apellidos}		</td>  </tr>     <tr>  <td colspan="2">Ud se ha inscrito en las siguientes sesiones:</td>  </tr>  <tr>  <td colspan="2">	  <ul>
+	  <!-- START BLOCK : bloque_formulario_inscrito_seccion_exito -->
+	  <li><strong>{dia_html}, {horario}</strong><br>{titulo}</li> 
+	  	  <!-- END BLOCK : bloque_formulario_inscrito_seccion_exito -->
+	  </ul></td>  </tr>   </table>

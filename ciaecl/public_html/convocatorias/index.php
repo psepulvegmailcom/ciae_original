@@ -1,0 +1,1 @@
+<meta HTTP-EQUIV="REFRESH" content="0; url=https://ciae.uchile.cl/?langSite=es&page=view_trabaja_connosotros">

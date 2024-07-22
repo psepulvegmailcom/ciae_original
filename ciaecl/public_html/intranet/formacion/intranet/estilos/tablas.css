@@ -1,0 +1,85 @@
+#contenido .dato {
+	width: 600px;
+	font-size: 11px;
+}
+
+#contenido .dato caption {
+	text-align: center;
+	font-weight: bold;
+	/*width: 500px;*/
+}
+
+#contenido .dato th {
+	color: #396D99;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #BBD2E6;
+	border-right-color: #BBD2E6;
+	border-bottom-color: #BBD2E6;
+	border-left-color: #BBD2E6;
+	background-color: #D5E3EF;
+	font-weight: bold;
+}
+
+#contenido .dato td {
+	border-right: 1px solid #BBD2E6;
+	border-bottom: 1px solid #BBD2E6;
+	color: #666666;
+	padding-left: 10px;
+	background-color: #FFFFFF;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	vertical-align: top;
+}
+
+#contenido .dato td.linea1 {
+	border-left: 1px solid #BBD2E6;
+	border-top: 0;
+	text-align: left;
+	background-color: #fff;
+}
+
+
+#contenido .dato td.linea2 {
+	border-left: 1px solid #BBD2E6;
+	border-top: 0;
+	text-align: left;
+	background-color: #EFF4F9;
+}
+#contenido .dato .fondopeso2{
+	background-color: #EFF4F9;
+}
+
+#contenido .dato a {
+	color: #396D99;
+	text-decoration: none;
+}
+#contenido .dato a:hover {
+	color: #396D99;
+	text-decoration: underline;
+}
+
+
+#contenido .dato thead td{
+	color:#FFFFFF;
+	background-color:#396D99;
+	text-align:center;
+	font-weight:bold;
+	width: 500px;
+}
+ #contenido .dato tfoot td{
+	font-size:9px;
+	color:#000000;
+	background-color:#CCCCCC;
+	width: 500px;
+}

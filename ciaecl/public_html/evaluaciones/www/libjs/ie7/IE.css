@@ -1,0 +1,96 @@
+/*
+Copyright (c) 2007, Sidwod ltda. All rights reserved.
+version: 1.0
+*/
+
+html{
+	padding:0px;
+	margin:0px;
+	min-width: 939px;
+	height:100% !important;
+}
+body{
+	text-align:center;
+}
+
+#header { text-align: left;}
+
+#title {float:left; width:430px; padding: 10px 0 10px -10px;position:absolute;text-align: left;}
+
+#title {float:left; left:127px; width:470px; padding: 0px 260px 10px 10px;position:absolute;}
+.left {margin: 0 0px 5px 5px; }
+
+#sidebar a:link,#sidebar a:visited{width:190px; }
+#sidebar a.faq:link,#sidebar a.faq:visited{width:190px;}
+ 
+button span {
+	background: transparent url('../../images/images_portal/bg_button_span.gif') no-repeat;
+	display: block;
+	line-height: 14px;
+	padding: 5px 0px 5px 2px;
+	outline: none !important;
+}
+
+
+td { font-size:11px;}
+input, textarea, select {
+		padding-top:3px;
+		height: 30px;
+		vertical-align:middle;
+}
+
+textarea{
+	height: 100px;
+}
+
+.inputfile
+{
+	width: 50%;
+	height: 30px;
+}
+
+.inputcheckbox  
+{
+	width: 20px;
+	height: 20px;	
+	border: none;
+	margin-right: 3px;	
+	padding:0;font-size:1%;line-height:1%;
+}
+
+
+#mainNav{ 
+	height:22px;
+	height:22px;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+#login_form input
+{
+	height:25px;
+}
+
+#mainNav li{
+	width:20px;
+	height:12px;
+}
+
+
+	
+#mainNav li.current{
+	height:12px;
+}
+
+#mainNav li.lastDone{
+	height:12px;
+}
+
+#mainNav li.done{
+	height:12px;
+}
+
+#mainNav li.mainNavNoBg{
+	height:12px;
+}

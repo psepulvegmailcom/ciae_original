@@ -1,0 +1,1 @@
+<div style="float:right">	<a href="javascript:history.go(-1)" >&lt;&lt; {texto_volver}</a></div><br /><br />

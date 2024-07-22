@@ -1,0 +1,12 @@
+<table width="100%" border="0" cellpadding="3">
+	<tr><td colspan="2" style="text-align:left "> 
+	    <p>El Centro de Investigaci&oacute;n Avanzada en Educaci&oacute;n (CIAE) de la Universidad de Chile y el Departamento de Evaluaci&oacute;n, Medici&oacute;n y Registro Educacional (DEMRE) est&aacute;n realizando un estudio sobre validaci&oacute;n de instrumentos de medici&oacute;n para estudiantes de pedagog&iacute;a. </p>
+	    <p>Invitamos a participar de este estudio a <strong>estudiantes y profesores</strong> de Pedagog&iacute;a en Educaci&oacute;n Parvularia, Educaci&oacute;n B&aacute;sica,    Educaci&oacute;n Diferencial  y Pedagog&iacute;a en Educaci&oacute;n Media&nbsp;en las siguientes disciplinas: Lenguaje y Comunicaci&oacute;n, Matem&aacute;ticas, Historia, Geograf&iacute;a y Ciencias Sociales, Biolog&iacute;a, Qu&iacute;mica, F&iacute;sica, M&uacute;sica y Artes Visuales. </p>
+	    <p>        Esta actividad consiste en rendir una prueba en las carreras indicadas.</p>
+	   <p>Los requisitos estrictos para participar es ser:</p>
+	    <ul>
+        <li> Profesores de Pedagog&iacute;a en Educaci&oacute;n B&aacute;sica, Educaci&oacute;n Parvularia,  Educaci&oacute;n Diferencial o Especial y Pedagog&iacute;a en Educaci&oacute;n Media&nbsp;en las siguientes disciplinas: Lenguaje y Comunicaci&oacute;n, Matem&aacute;ticas, Historia, Geograf&iacute;a y Ciencias Sociales, Biolog&iacute;a, Qu&iacute;mica, F&iacute;sica, M&uacute;sica y Artes Visuales, quienes deben  estar <strong>TITULADOS</strong> entre los a&ntilde;os <strong>2012 y 2015</strong> en las carreras disciplinarias indicadas, o</li> 
+	    <li> Estudiantes de Pedagog&iacute;a en Educaci&oacute;n B&aacute;sica, Educaci&oacute;n Parvularia, Educaci&oacute;n Diferencial o Especial y Pedagog&iacute;a en Educaci&oacute;n Media&nbsp;en las siguientes disciplinas: Lenguaje y Comunicaci&oacute;n, Matem&aacute;ticas, Historia, Geograf&iacute;a y Ciencias Sociales, Biolog&iacute;a, Qu&iacute;mica, F&iacute;sica, M&uacute;sica y Artes Visuales, que est&eacute;n cursando su <strong>PEN&Uacute;LTIMO</strong> <strong>A&Ntilde;O DE CARRERA</strong>, esto significa que su proceso de egreso se realizar&aacute; el a&ntilde;o 2017.</li>
+	    </ul>
+        <p><strong>De NO cumplir con estos requisitos NO puede participar de esta actividad. Los datos del registro ser&aacute;n verificados internamente. Todos los participantes deber&aacute;n firmar un consentimiento informado, por lo que en el caso de no cumplir estos requisitos se puede exponer a sanciones. </strong></p>
+       

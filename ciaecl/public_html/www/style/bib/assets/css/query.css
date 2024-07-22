@@ -1,0 +1,189 @@
+/* Media Query */
+@media only screen and (min-width:1270px) {
+
+}
+
+
+@media only screen and (max-width:1199px) {
+  #container--boxes-featured .col-height-1 {
+    height: 302px;
+  }
+  #container--boxes-featured .col-height-2 {
+    height: 145px;
+  }
+}
+
+
+@media only screen and (max-width:991px) {
+  .navbar-ciae {
+    background: transparent;
+    border-top: 1px solid #e7e7e7;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-nav > li ul.dropdown-menu {
+    background: transparent;
+    border: 0;
+  }
+  .navbar-nav > li.nav-item a {
+    padding: 10px 20px;
+    padding-right: 20px;
+    padding-right: 58px;
+    background: #3092c0;
+        background-image: none;
+    background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #3298c8), color-stop(100%, #2e8cb8));
+    background-image: -webkit-linear-gradient(to bottom, #3298c8, #2e8cb8);
+    background-image: -moz-linear-gradient(to bottom, #3298c8, #2e8cb8);
+    background-image: -o-linear-gradient(to bottom, #3298c8, #2e8cb8);
+    background-image: linear-gradient(to bottom, #3298c8, #2e8cb8);
+    color: white;
+    font-family: "PT Sans Narrow", "Arial Narrow", Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 23px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  }
+  .dropdown-item {
+    padding-left: 0;
+    padding-right: 0
+  }
+  .navbar-nav > li ul.dropdown-menu li a {
+    background: transparent;
+    color: #2b82ac;
+    padding: 10px 20px;
+    display: block;
+  }
+  .navbar .dropdown-toggle:not(.nav-link)::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .5em;
+    vertical-align: 0;
+    border-bottom: .3em solid transparent;
+    border-top: .3em solid transparent;
+    border-left: .3em solid;
+  }
+  .navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+    background-color: transparent;
+  }
+  .navbar-nav > li ul li ul.dropdown-menu {
+    background: rgba(102, 102, 102, 0.1);
+    border-radius: 0;
+    padding: 0;
+  }
+  .navbar-nav > li ul.dropdown-menu {
+    padding: 0;
+  }
+  .navbar-nav > li ul li ul.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e3e3e3;
+  }
+  .navbar-nav > li ul li ul.dropdown-menu li:last-child a {
+    border-bottom: 0;
+  }
+  header .navbar-toggler {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  ul.nav.navbar-nav {
+    -ms-flex-order: 2;
+    order: 2;
+    text-align: right;
+    display: block;
+  }
+  ul.nav.navbar-nav li {
+    display: inline-block;
+  }
+  ul.nav.navbar-nav li a {
+    color: #337ab7
+  }
+  .navbar-collapse {
+    -ms-flex-order: 3;
+    order: 3;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+}
+	
+
+@media only screen and (max-width:767px) {
+  section#buscador-home {
+    padding-top: 30px;
+    height: 550px
+  }
+  section#buscador-site {
+    padding-top: 30px;
+    height: 450px
+  }
+  section#destacados,
+  section#container--info-site {
+    margin-top: -30px;
+  }
+}
+
+
+@media only screen and (max-width:575px) {
+  #container--boxes-featured .grid-item figure img {
+    max-width: none;
+    width: 100%;
+  }
+  #container--boxes-featured .col-height-1 {
+    height: 400px;
+  }
+  #container--boxes-featured .col-height-2 {
+    height: 290px;
+  }
+  section#container--info-site {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .container--box-galeria .owl-carousel .owl-nav button.owl-next,
+  .container--box-galeria .owl-carousel .owl-nav button.owl-prev {
+    font-size: 37px;
+  }
+}
+
+
+@media only screen and (max-width:480px) {
+  .container--search-box {
+    padding: 30px
+  }
+  #container--boxes-featured .col-height-1 {
+    height: 350px;
+  }
+  .container--info-resultado-busqueda figure {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 15px
+  }
+  .container--info-resultado-busqueda figure.img-doc-book {
+    max-width: 110px;
+  }
+}
+
+
+@media only screen and (max-width:391px) {
+  section#container--info-site {
+    margin-top: -97px;
+  }
+}
+
+
+@media only screen and (max-width:380px) {
+  #container--boxes-featured .col-height-1 {
+    height: 280px;
+  }
+  .container--info-resultado-busqueda,
+  .box--resultado-busqueda .text-right {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

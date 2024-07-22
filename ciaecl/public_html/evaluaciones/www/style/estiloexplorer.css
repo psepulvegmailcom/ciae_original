@@ -1,0 +1,26 @@
+#pie {
+	 
+	text-align: center; 
+}
+
+body {
+text-align: center;
+}
+p,ul,li,ol,td, h2,h1, .destacado {text-align:justify;}
+
+#navegador li{
+text-align:left;
+height: 31px;
+}
+
+#navegador {
+height:330px;
+	
+}
+
+.destacado_home {padding-left:22px;}
+
+.descrip { 
+	background-image: url(../imag/titulo_fechas_ie.jpg);
+	text-align:left;
+}

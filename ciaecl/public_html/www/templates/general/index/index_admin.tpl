@@ -1,0 +1,1 @@
+<!-- INCLUDE BLOCK : www/templates/general/cabeceras/admin_comun.tpl -->

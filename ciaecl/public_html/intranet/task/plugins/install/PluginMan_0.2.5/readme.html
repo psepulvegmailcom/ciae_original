@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Plugin Manager Readme</title>
+
+
+
+    
+    <style type="text/css">
+        BODY {
+            font-size: 100%;
+        }
+
+        BODY, TD, TH {
+            font-family: tahoma, verdana, arial, helvetica, sans-serif;
+            font-size: 0.8em;
+        }
+
+        H2 {
+            font-size: 10pt;
+            font-weight: bold;
+        }
+
+        A:hover {
+            text-decoration: none;
+        }
+
+        H1 {
+            font-family: tahoma, arial, helvetica, sans-serif;
+            font-size: 1.4em;
+            font-weight: bold;
+            border-bottom: 1px #ccc solid;
+            padding-bottom: 2px;
+        }
+
+        TT {
+            font-family: courier new;
+            font-weight: bold;
+            color: #060;
+        }
+
+        PRE {
+            font-family: courier new;
+            font-size: 100%;
+        }
+
+        .events TH {
+            font-size: 8pt;
+            font-family: verdana;
+            font-weight: bold;
+            text-align: left;
+            background-color: #eee;
+            border-bottom: 1px #ccc solid;
+        }
+
+        .events .event {
+            font-weight: bold;
+        }
+
+        .events .description {
+            font-size: 8pt;
+            font-family: verdana;
+        }
+
+        .events TD {
+            border-bottom: 1px #ccc dotted;
+            vertical-align: top;
+        }
+    </style></head><body>
+
+<h1>
+    Plugin Manager Readme
+</h1>
+
+<h2>Prerequesites</h2>
+
+<p>
+    <a href="http://www.taskfreak.com/" target="_blank">TaskFreak!</a> v0.6.1 installed.
+</p>
+
+<br>
+<h2>Installation (users)</h2>
+
+<ol>
+		
+    <li>
+			a) Upload the zipped plugin from your harddrive using any browser (or)<br>
+			b) Copy the unzipped plugin folder into <b>/plugins/install</b> using ftp
+		</li>
+
+    <li>Log into TaskFreak, select from the menu <b>manage > plugins</b></li>
+    <li>If the plugin has been detected successfully, click on the install icon</b></li>
+    <li>All further instructions will appear on the screen (confirm installation)</li>
+</ol>
+
+<br>
+<h2>Configuration (authors)</h2>
+
+<p>
+    <em>config.php</em>:
+</p>
+
+<ul>
+    <li><b>Title: </b>Title of plugin</li>
+    <li><b>Description: </b>Plugin description</li>
+    <li><b>Version: </b>Release version</li>
+    <li><b>Author: </b>Your name</li>
+    <li><b>Size: </b>Approx size of the plugin</li>
+    <br>
+    <li><b>Date: </b>Release date (optional)</li>
+    <li><b>Readme: </b>Detailed information (optional)</li>
+    <li><b>Changelog: </b>ChangeLog (optional)</li>
+    <li><b>Icon: </b>Icon (optional)</li>
+    <br>
+    <li><b>SQL: </b>Table creating query (optional)</li>
+</ul>
+
+<p>
+    <em>the <strong>modify</strong> directory</em>:
+</p>
+
+<ul>
+    <li>Files under the <b>modify</b> folder must be in the same relative subfolder as the original ones in TaskFreak</li>
+    <li>These files contain the hardcore changes to the existing files using ---[find]--- and ---[replace]---</li>
+    <li>Please make sure you are using <strong>unix linebreaks</strong>, check with your file editor. Wrong linebreaks will work only with single lines</li>
+    <li>For a working example check other available plugins from <a href="http://forum.dracon.biz/viewforum.php?f=3">Dracon Forum</a></li>
+    <li>Please make as little modifications directly to the system as you can, create new files instead, this will ensure better compatibility with other plugins</li>
+</ul>
+
+<p>
+    <em>the rest</em>:
+</p>
+
+<ul>
+    <li>All other files and folders will be copied into <strong>/plugins/data/installed/your_plugin_title</strong> directory</li>
+</ul>
+
+
+<br>
+<h2>Distribution</h2>
+
+<ul>
+    <li>Entirely up to you</li>
+    <li>But for the upload facility via browser Plugin Manager requires simple .zip format of the plugin's root folder inclusive with all the contents inside</li>
+</ul>
+
+
+<br>
+<h2>Plugin installation</h2>
+
+<ul>
+    <li>All new files will be copied into their respective folder</li>
+    <li>If a new table is required and the SQL file is provided, Plugin Manager will create the table using prefix set in TaskFreak's config file</li>
+    <li>All new files in the modify directory will attempt to rewrite the original files, backups will be made in the backup folder</li>
+    <li>The installation files will be removed</li>
+</ul>
+
+
+<br>
+<h2>Plugin uninstallation</h2>
+
+<ul>
+    <li>All new files will be deleted</li>
+    <li>Created SQL table(s) can be dropped (optional)</li>
+    <li>Modifications to original files will be reverted or replaced by the backup files (replace not implemented yet)</li>
+</ul>
+
+
+<br>
+<h2>Permissions</h2>
+
+<p>
+		If you are copying plugins via ftp you will need to chmod 777 the plugins folder, you can change it back after installing the plugins							
+		<br>
+		If you are uploading plugins via browser, you still need writing permissions for your http server, what can be achieved either by chmod 700 and chown to www-data(or_whatever_your_web_user_is_called) or chmod 775 and chgroup. 
+		<br><br>
+		Work out what's the best for you and if you have any suggestions, please use the forum to share your knowledge with others
+<p></p>
+
+
+
+
+
+</body></html>

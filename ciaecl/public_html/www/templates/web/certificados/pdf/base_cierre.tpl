@@ -1,0 +1,1 @@
+Se otorga el presente certificado para los fines que el interesado(a) estime conveniente.

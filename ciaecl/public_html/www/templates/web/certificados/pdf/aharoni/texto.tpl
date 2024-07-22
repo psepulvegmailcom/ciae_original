@@ -1,0 +1,3 @@
+Se certifica por medio del presente que <b>{nombre}</b> particip&oacute; en el Seminario "Algunos principios para la ense&ntilde;anza de la matem&aacute;tica escolar: reflexiones sobre las fracciones" dictado por el Profesor Ron Aharoni, profesor de Technion (Israel Institute of Technology), el d&iacute;a 19 de diciembre de 2012.
+
+<!-- INCLUDE BLOCK : www/templates/web/certificados/bases/base_cierre.tpl -->  
